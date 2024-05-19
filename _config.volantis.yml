@@ -52,10 +52,10 @@ cover:
     home: true
     archive: true
     others: true # can be written in front-matter 'cover: true'
-  background: ./pic/CAFELCPR.png #封面背景，需要上传url
+  background: https://cdn.jsdelivr.net/gh/Gaesar/Gaesar.github.io@main/pic/202405191337870.jpg #封面背景，需要上传url
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
-  title: '#你的标题'
+  title: '昔日龌龊不足夸，今朝放荡思无涯'
   subtitle: ''
   search: 搜一下 # search bar placeholder 搜索栏里面显示的东西
   features:
