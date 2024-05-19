@@ -1,0 +1,69 @@
+############################### Navigation Bar ############################### > start
+# 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
+navbar:
+  visiable: auto # always, auto
+  logo: # choose [img] or [icon + title]
+    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    icon:
+    title:
+  menu:
+    - name: 博客
+      icon: fa-solid fa-rss
+      url: /
+    - name: 分类
+      icon: fa-solid fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fa-solid fa-tags
+      url: tags/
+    - name: 归档
+      icon: fa-solid fa-archive
+      url: archives/
+    - name: 友链
+      icon: fa-solid fa-link
+      url: friends/
+    - name: 关于
+      icon: fa-solid fa-info-circle
+      url: about/
+  search: Search...   # Search bar placeholder
+############################### Navigation Bar ############################### > end
+pages:
+  # 友链页面配置
+  friends:
+    layout_scheme: simple # simple: 简单布局, traditional: 传统布局
+site_footer:
+  # layout of footer: [aplayer, social, license, info, copyright]
+  layout: [aplayer, social, license, info, copyright]
+  social:
+    - icon: fas fa-rss
+      url: atom.xml
+    - icon: fas fa-envelope
+      url: mailto:#你的邮箱
+    - icon: fab fa-github
+      url: #你的github地址
+  copyright: '[Copyright © 2017-2022 #版权](/)'
+  # You can add your own property here. (Support markdown, for example: br: '<br>')
+  br: '<br>'
+############################### Cover ############################### > start
+cover:
+  height_scheme: full # full, half 
+  layout_scheme: search # blank (留白), search (搜索), dock (坞), featured (精选), focus (焦点)，个人感觉搜索更简洁
+  display:
+    home: true
+    archive: true
+    others: true # can be written in front-matter 'cover: true'
+  background: ./pic/CAFELCPR.png #封面背景，需要上传url
+  # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
+  logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
+  title: '#你的标题'
+  subtitle: ''
+  search: 搜一下 # search bar placeholder 搜索栏里面显示的东西
+  features:
+    - name: 主页
+      icon: #
+      url: /
+    - name: 标签
+      icon: #
+      url: tags/
+
+############################### Cover ############################### > end
