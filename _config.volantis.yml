@@ -69,7 +69,7 @@ cover:
 
 ############################### Sidebar ############################### > start
 sidebar:
-  position: right # left right 侧边栏的位置
+  position: left # left right 侧边栏的位置
   # 主页、分类、归档等独立页面
   for_page: [blogger, category, tagcloud, webinfo, lastupdate]#侧边栏的组成部分
   # layout: docs/post 这类文章页面
