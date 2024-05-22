@@ -56,7 +56,7 @@ cover:
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
   title: 'Gaesar的笔记本'
-  subtitle: ''
+  subtitle: <div id="binft">123</div>
   search: 搜一下 # search bar placeholder 搜索栏里面显示的东西
   features:
     - name: 主页
