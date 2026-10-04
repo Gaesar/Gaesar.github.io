@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  
-  <link rel="canonical" href="https://Gaesar.github.io/2026/10/04/大模型基础/"/>
+  <meta name="robots" content="noindex,follow">
+  <link rel="canonical" href="https://Gaesar.github.io/tags/bug复盘/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,21 +34,16 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>大模型基础 - Gaesar</title>
-  <meta name="keywords" content="从0学习Agent,null">
+  <title>Tag: bug复盘 - Gaesar</title>
+  <meta name="keywords" content="null">
   <meta desc name="description" content="Gaesar - Jacques Zhao - Gaesar">
-  
-<meta property="og:type" content="article">
-<meta property="og:title" content="大模型基础">
-<meta property="og:url" content="https://gaesar.github.io/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Gaesar">
+<meta property="og:url" content="https://gaesar.github.io/tags/bug%E5%A4%8D%E7%9B%98/index.html">
 <meta property="og:site_name" content="Gaesar">
-<meta property="og:description" content="大模型生成回答的工作原理大模型首先在互联网上的大量语料中进行学习，学习到了词与词之间的关联。 然后拿着用户的信息，根据之前的学习，去推断概率最大的下一个词是什么，把这个概率最大的词取出拼接到用户的信息中，再根据这个拼接的信息继续推断概率最大的下一个词是什么，就这样不断循环，一个词一个词地生成，直到推断出结束符，回答完成。 控制大模型选词的参数 temperature（0~2）：温度，控制输出的发散">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2026-10-04T14:01:36.000Z">
-<meta property="article:modified_time" content="2026-10-04T14:22:38.191Z">
 <meta property="article:author" content="Jacques Zhao">
-<meta property="article:tag" content="从0学习Agent">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2295,7 +2290,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper post search' style="display: ;">
+      <div id="half" class='cover-wrapper  search' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2351,9 +2346,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
+
 <div id="l_main" class=''>
-  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/04/大模型基础/">
+  
+    
+      
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/05/解决github推送超时：Failed-to-connect-to-github-com-port-443-Timed-out/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Gaesar">
   </span>
@@ -2362,283 +2373,62 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="">
   </span>
   
-
-
+  
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  <div class="article-meta" id="top">
+  
     
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2026/10/05/%E8%A7%A3%E5%86%B3github%E6%8E%A8%E9%80%81%E8%B6%85%E6%97%B6%EF%BC%9AFailed-to-connect-to-github-com-port-443-Timed-out/"  itemprop="url">
+        解决github推送超时：Failed to connect to github.com port 443: Timed out.
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
     
+      
+        解决办法：换成 SSH 协议1. 先在本地生成 ssh 密钥，添加到 Github1.打开 git bash，生成密钥（一路回车）。
+1ssh-keygen -t ed25519 -C &quot;你github绑定的邮箱&quot;
+
+2.打开 C:\Users\你的用户名\.ssh\id_ed25519.pub，复制全部公钥文本。
+3.Github 添加公钥，头像 → Settings ...
+      
     
-      <h1 class="title" itemprop="name headline">
-        大模型基础
-      </h1>
-      <div class='new-meta-box'>
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
         
-          
-            
-<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <a itemprop="url" class='author' href="/" rel="nofollow">
-    <img itemprop="image" src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/apple-touch-icon.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-    <p itemprop="name">请设置文章作者</p>
-  </a>
-</div>
-
-          
+        <time itemprop="dateCreated datePublished" datetime="2026-10-05T00:19:30+08:00">2026-10-05</time>
         
-          
-            
-
-          
-        
-          
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2026-10-04T22:01:36+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Oct 4, 2026</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-
-
-
-          
-        
-        <!-- Custom Files topMeta begin-->
-        
-        <!-- Custom Files topMeta end-->
       </div>
-    
-  </div>
-
-
-  <div id="layoutHelper-page-plugins"></div>
-  <div id="post-body" itemprop="articleBody">
-    <h2 id="大模型生成回答的工作原理"><a href="#大模型生成回答的工作原理" class="headerlink" title="大模型生成回答的工作原理"></a>大模型生成回答的工作原理</h2><p>大模型首先在互联网上的大量语料中进行学习，学习到了词与词之间的关联。</p>
-<p>然后拿着用户的信息，根据之前的学习，去推断概率最大的下一个词是什么，把这个概率最大的词取出拼接到用户的信息中，再根据这个拼接的信息继续推断概率最大的下一个词是什么，就这样不断循环，一个词一个词地生成，直到推断出结束符，回答完成。</p>
-<p>控制大模型选词的参数</p>
-<p>temperature（0~2）：温度，控制输出的发散程度。可以想象成分子，温度越低越稳定，选词的时候优先选概率最大的；温度越高越不温度，选词的时候有可能选到概率小的。</p>
-<p>top_p：在前几个累积概率为p的词中选。</p>
-<p>对稳定性要求高的任务，温度调低，创意性发散性的任务，温度调高。</p>
-<h2 id="大模型的调用"><a href="#大模型的调用" class="headerlink" title="大模型的调用"></a>大模型的调用</h2><p>大模型运行在各大厂商的服务器中，通过API给用户提供大模型服务。</p>
-<p>用户把给大模型的内容写在json中，以HTTP的方式请求调用厂商的大模型。</p>
-<p>厂商的大模型同样把回答的内容写在json中，以HTTP的方式返回给用户。</p>
-<p>手动写HTTP太麻烦了，已经有现成的组件封装好了调用的方法。</p>
-<blockquote>
-<p>python中通过API调用一次大模型的代码:</p>
-</blockquote>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> openai <span class="keyword">import</span> OpenAI</span><br><span class="line"></span><br><span class="line">client = OpenAI(api_key=<span class="string">&quot;sk-...&quot;</span>, base_url=<span class="string">&quot;https://api.deepseek.com&quot;</span>)</span><br><span class="line"></span><br><span class="line">response = client.chat.completions.create(</span><br><span class="line">    model=<span class="string">&quot;deepseek-v4-flash&quot;</span>,</span><br><span class="line">    messages=[</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;system&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;你是一个简洁直接的中文助手。&quot;</span>&#125;,</span><br><span class="line">        &#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;user&quot;</span>, <span class="string">&quot;content&quot;</span>: <span class="string">&quot;用一句话解释什么是递归&quot;</span>&#125;,</span><br><span class="line">    ],</span><br><span class="line">)</span><br><span class="line"><span class="built_in">print</span>(response.choices[<span class="number">0</span>].message.content)</span><br></pre></td></tr></table></figure>
-
-<blockquote>
-<p>接收到的模型返回的结果:</p>
-</blockquote>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;choices&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span><span class="punctuation">&#123;</span></span><br><span class="line">    <span class="attr">&quot;message&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;role&quot;</span><span class="punctuation">:</span> <span class="string">&quot;assistant&quot;</span><span class="punctuation">,</span> <span class="attr">&quot;content&quot;</span><span class="punctuation">:</span> <span class="string">&quot;递归就是……&quot;</span><span class="punctuation">&#125;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="attr">&quot;finish_reason&quot;</span><span class="punctuation">:</span> <span class="string">&quot;stop&quot;</span></span><br><span class="line">  <span class="punctuation">&#125;</span><span class="punctuation">]</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;usage&quot;</span><span class="punctuation">:</span> <span class="punctuation">&#123;</span><span class="attr">&quot;prompt_tokens&quot;</span><span class="punctuation">:</span> <span class="number">11</span><span class="punctuation">,</span> <span class="attr">&quot;completion_tokens&quot;</span><span class="punctuation">:</span> <span class="number">24</span><span class="punctuation">,</span> <span class="attr">&quot;total_tokens&quot;</span><span class="punctuation">:</span> <span class="number">35</span><span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="大模型对话中的四种角色"><a href="#大模型对话中的四种角色" class="headerlink" title="大模型对话中的四种角色"></a>大模型对话中的四种角色</h2><table>
-<thead>
-<tr>
-<th>role</th>
-<th>代表的含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>system</td>
-<td>模型需要遵守的规则</td>
-</tr>
-<tr>
-<td>user</td>
-<td>用户的话</td>
-</tr>
-<tr>
-<td>assistant</td>
-<td>模型的话</td>
-</tr>
-<tr>
-<td>tool</td>
-<td>工具调用的参数</td>
-</tr>
-</tbody></table>
-<h2 id="大模型的记忆"><a href="#大模型的记忆" class="headerlink" title="大模型的记忆"></a>大模型的记忆</h2><p>大模型是没有记忆的，只把当前的最新一条消息给大模型，大模型就只能看到这条消息，看不到过去的消息。</p>
-<p>所以把历史对话的所有消息一并发送给大模型，大模型就可以看到所有的消息，就像有了记忆一样。</p>
-<h2 id="大模型的几点限制"><a href="#大模型的几点限制" class="headerlink" title="大模型的几点限制"></a>大模型的几点限制</h2><p>上下文窗口有限：把历史对话的所有消息一并发送给大模型，大模型就可以看到所有的消息，就像有了记忆一样，但大模型一次性接收的消息的长度是有限制的，超了直接报错。</p>
-<p>开销大花费高：大模型一个词一个词地生成，每次推断的时候，都要重新看一遍已有的信息，代价太大。KV cache，就是把不变的前缀信息缓存下来，这样就不需要每次都重新看，只看新增的部分就可以了，可以降低开销。</p>
-<p>存在幻觉：大模型的原理是根据当前信息，推断概率最大的下一个词是什么，所以生成的信息是概率上最大的，不一定是正确的，大模型会编造误以为是正确的答案，这就是幻觉。</p>
-<h2 id="控制大模型生成的文本质量（prompt-工程）"><a href="#控制大模型生成的文本质量（prompt-工程）" class="headerlink" title="控制大模型生成的文本质量（prompt 工程）"></a>控制大模型生成的文本质量（prompt 工程）</h2><p>1.system prompt 给大模型制定规则。</p>
-<p>2.给几个输出示例，比文字描述更好。</p>
-<p>3.结构化输出，要模型输出 JSON 时，用 API 的 <code>response_format=&#123;&quot;type&quot;: &quot;json_object&quot;&#125;</code>，比在 prompt 里喊”请务必输出合法 JSON”可靠。</p>
-<h2 id="实验测试"><a href="#实验测试" class="headerlink" title="实验测试"></a>实验测试</h2><h3 id="1-测试system-prompt"><a href="#1-测试system-prompt" class="headerlink" title="1.测试system prompt"></a>1.测试system prompt</h3><p>打开注释<code> SYSTEM_PROMPT = &quot;使用文言文回答&quot;</code> ，观察模型回答。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">你&gt; 我是小明，你是谁？</span><br><span class="line">MiniAgent&gt; 汝即小明也。吾乃机巧之术所生灵，今作文字应答、析义解难耳。汝欲闻古今之理乎？</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-测试记忆功能"><a href="#2-测试记忆功能" class="headerlink" title="2.测试记忆功能"></a>2.测试记忆功能</h3><p>打开注释<code># messages = [&#123;&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: SYSTEM_PROMPT&#125;]</code>，每次对话开始，重新初始化消息数组。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">你&gt; 我是小明，你是谁？</span><br><span class="line">MiniAgent&gt; 你好小明！我是通义千问（Qwen），由阿里巴巴集团通义实验室开发的大语言模型。有什么我可以帮你的吗？</span><br><span class="line">你&gt; 我叫什么？</span><br><span class="line">MiniAgent&gt; 我不知道你叫什么。你可以告诉我你的名字。</span><br></pre></td></tr></table></figure>
-
-<p>关闭注释<code># messages = [&#123;&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: SYSTEM_PROMPT&#125;]</code>，每次把整个历史数组给大模型。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">你&gt; 我是小明，你是谁？</span><br><span class="line">MiniAgent&gt; 你好小明！我是通义千问（Qwen），由阿里巴巴集团通义实验室开发的大语言模型。有什么我可以帮你的吗？</span><br><span class="line">你&gt; 我叫什么？</span><br><span class="line">MiniAgent&gt; 你叫小明。</span><br></pre></td></tr></table></figure>
-
-<h3 id="3-测试温度参数"><a href="#3-测试温度参数" class="headerlink" title="3.测试温度参数"></a>3.测试温度参数</h3><p>打开注释<code># messages = [&#123;&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: SYSTEM_PROMPT&#125;]</code> ，连续提问5次“给我的小猫起一个名字，给我一个就好”。</p>
-<p>(1) temperature&#x3D;0</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 年糕</span><br><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 年糕</span><br><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 年糕</span><br><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 年糕</span><br><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 年糕</span><br></pre></td></tr></table></figure>
-
-<p>(2) temperature&#x3D;1.7</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 奶糖</span><br><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 奶糖,寓意“温柔、柔软又治愈的感觉”。</span><br><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 汤圆</span><br><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 布丁</span><br><span class="line">你&gt; 给我的小猫起一个名字，给我一个就好。</span><br><span class="line">MiniAgent&gt; 雪球</span><br></pre></td></tr></table></figure>
-
-<h3 id="实验源码"><a href="#实验源码" class="headerlink" title="实验源码"></a>实验源码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> openai <span class="keyword">import</span> OpenAI</span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"><span class="keyword">from</span> pathlib <span class="keyword">import</span> Path</span><br><span class="line"></span><br><span class="line">SYSTEM_PROMPT = <span class="string">&quot;回答要简洁明了，不要太啰嗦。&quot;</span></span><br><span class="line"><span class="comment"># 测试系统提示词的影响</span></span><br><span class="line"><span class="comment"># SYSTEM_PROMPT = &quot;使用文言文回答&quot;</span></span><br><span class="line"></span><br><span class="line">MODEL = <span class="string">&quot;Qwen3.8-Flash-Next&quot;</span></span><br><span class="line"><span class="comment"># 改成你对应服务商的base_url</span></span><br><span class="line">BASE_URL = <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">load_api_key</span>() -&gt; <span class="built_in">str</span>:</span><br><span class="line">    <span class="comment"># 优先读取环境变量</span></span><br><span class="line">    env_key = os.environ.get(<span class="string">&quot;DEEPSEEK_API_KEY&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> env_key:</span><br><span class="line">        <span class="keyword">return</span> env_key.strip()</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 尝试读取.env（优先当前目录，备选上级目录）</span></span><br><span class="line">    env_paths = [</span><br><span class="line">        Path.cwd() / <span class="string">&quot;.env&quot;</span>,</span><br><span class="line">        Path(__file__).resolve().parent / <span class="string">&quot;.env&quot;</span>,</span><br><span class="line">        Path(__file__).resolve().parents[<span class="number">1</span>] / <span class="string">&quot;.env&quot;</span>,</span><br><span class="line">    ]</span><br><span class="line">    <span class="keyword">for</span> env_file <span class="keyword">in</span> env_paths:</span><br><span class="line">        <span class="keyword">if</span> env_file.exists():</span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                lines = env_file.read_text(encoding=<span class="string">&quot;utf-8&quot;</span>).splitlines()</span><br><span class="line">                <span class="keyword">for</span> line <span class="keyword">in</span> lines:</span><br><span class="line">                    line = line.strip()</span><br><span class="line">                    <span class="keyword">if</span> <span class="keyword">not</span> line <span class="keyword">or</span> line.startswith(<span class="string">&quot;#&quot;</span>):</span><br><span class="line">                        <span class="keyword">continue</span></span><br><span class="line">                    <span class="keyword">if</span> line.startswith(<span class="string">&quot;DEEPSEEK_API_KEY=&quot;</span>):</span><br><span class="line">                        <span class="keyword">return</span> line.split(<span class="string">&quot;=&quot;</span>, <span class="number">1</span>)[<span class="number">1</span>].strip()</span><br><span class="line">            <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">                <span class="built_in">print</span>(<span class="string">f&quot;读取 <span class="subst">&#123;env_file&#125;</span> 失败: <span class="subst">&#123;e&#125;</span>&quot;</span>, file=sys.stderr)</span><br><span class="line"></span><br><span class="line">    sys.exit(<span class="string">&quot;错误：没有找到 DEEPSEEK_API_KEY。请配置环境变量或在.env中填写。&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">chat_stream</span>(<span class="params">client: OpenAI, messages: <span class="built_in">list</span></span>):</span><br><span class="line"></span><br><span class="line">    <span class="string">&quot;&quot;&quot;流式对话，返回完整回复文本&quot;&quot;&quot;</span></span><br><span class="line">    reply = <span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">try</span>:</span><br><span class="line">        <span class="comment"># `stream` 是一个迭代器，阻塞等待服务端推送 chunk。</span></span><br><span class="line">        stream = client.chat.completions.create(</span><br><span class="line">            model=MODEL,</span><br><span class="line">            messages=messages,</span><br><span class="line">            stream=<span class="literal">True</span>,</span><br><span class="line">            temperature=<span class="number">0</span></span><br><span class="line">        )</span><br><span class="line">        <span class="keyword">for</span> chunk <span class="keyword">in</span> stream:</span><br><span class="line">            <span class="comment"># print(f&quot;\n[DEBUG CHUNK] &#123;chunk&#125;&quot;, file=sys.stderr)</span></span><br><span class="line">            <span class="keyword">if</span> <span class="keyword">not</span> chunk.choices:</span><br><span class="line">                <span class="keyword">continue</span></span><br><span class="line">            delta = chunk.choices[<span class="number">0</span>].delta</span><br><span class="line">            <span class="keyword">if</span> delta <span class="keyword">and</span> delta.content:</span><br><span class="line">                <span class="comment"># end=&quot;&quot; 参数确保不换行，flush=True 立即输出到终端</span></span><br><span class="line">                <span class="built_in">print</span>(delta.content, end=<span class="string">&quot;&quot;</span>, flush=<span class="literal">True</span>)</span><br><span class="line">                reply += delta.content</span><br><span class="line">        <span class="keyword">return</span> reply</span><br><span class="line">    <span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;\nAPI调用异常: <span class="subst">&#123;e&#125;</span>&quot;</span>, file=sys.stderr)</span><br><span class="line">        <span class="keyword">return</span> <span class="string">&quot;&quot;</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>() -&gt; <span class="literal">None</span>:</span><br><span class="line">    api_key = load_api_key()</span><br><span class="line">    client = OpenAI(api_key=api_key, base_url=BASE_URL)</span><br><span class="line"></span><br><span class="line">    messages = [&#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;system&quot;</span>, <span class="string">&quot;content&quot;</span>: SYSTEM_PROMPT&#125;]</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;MiniAgent v0.1（<span class="subst">&#123;MODEL&#125;</span>）&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;输入 exit 退出，输入 clear 清空对话历史\n&quot;</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        <span class="comment"># 测试大模型记忆能力</span></span><br><span class="line">        <span class="comment"># messages = [&#123;&quot;role&quot;: &quot;system&quot;, &quot;content&quot;: SYSTEM_PROMPT&#125;]</span></span><br><span class="line">        user_input = <span class="built_in">input</span>(<span class="string">&quot;你&gt; &quot;</span>).strip()</span><br><span class="line">        <span class="keyword">if</span> user_input == <span class="string">&quot;exit&quot;</span>:</span><br><span class="line">            <span class="keyword">break</span></span><br><span class="line">        <span class="keyword">if</span> user_input == <span class="string">&quot;clear&quot;</span>:</span><br><span class="line">            messages = [&#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;system&quot;</span>, <span class="string">&quot;content&quot;</span>: SYSTEM_PROMPT&#125;]</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;对话已清空\n&quot;</span>)</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> user_input:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line"></span><br><span class="line">        messages.append(&#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;user&quot;</span>, <span class="string">&quot;content&quot;</span>: user_input&#125;)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;MiniAgent&gt; &quot;</span>, end=<span class="string">&quot;&quot;</span>, flush=<span class="literal">True</span>)</span><br><span class="line">        reply = chat_stream(client, messages)</span><br><span class="line">        <span class="built_in">print</span>()  <span class="comment"># 换行</span></span><br><span class="line">        <span class="comment"># 追加assistant回复，维持上下文记忆</span></span><br><span class="line">        messages.append(&#123;<span class="string">&quot;role&quot;</span>: <span class="string">&quot;assistant&quot;</span>, <span class="string">&quot;content&quot;</span>: reply&#125;)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&quot;__main__&quot;</span>:</span><br><span class="line">    main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-  </div>
-  
-  
-    
-    <div class='footer'>
-       <!-- 参考资料、相关资料等 -->
       
-       <!-- 相关文章 -->
-      
-      <!-- 版权声明组件 -->
-      
-      <!-- 打赏组件 -->
+        <div>
+          <a class='readmore' href='/2026/10/05/%E8%A7%A3%E5%86%B3github%E6%8E%A8%E9%80%81%E8%B6%85%E6%97%B6%EF%BC%9AFailed-to-connect-to-github-com-port-443-Timed-out/' itemprop="url">
+            Read More
+          </a>
+        </div>
       
     </div>
   
-  
-    
 
-
-  <div class='article-meta' id="bottom">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-10-04T22:22:38+08:00">
-  <a class='notlink'>
-    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Oct 4, 2026</p>
-  </a>
 </div>
 
+          </div>
         
       
-        
-          
+    
+  </section>
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E4%BB%8E0%E5%AD%A6%E4%B9%A0Agent/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>从0学习Agent</p></a></div>
-  <span hidden itemprop="keywords">从0学习Agent</span>
-
-
-        
-      
-        
-          
-  <div class="new-meta-item share -mob-share-list">
-  <div class="-mob-share-list share-body">
     
-      
-        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gaesar.github.io/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/&title=大模型基础 - Gaesar&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://gaesar.github.io/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/&title=大模型基础 - Gaesar&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
-          
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gaesar.github.io/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/&title=大模型基础 - Gaesar&summary="
-          
-          >
-          
-            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
-          
-        </a>
-      
-    
-      
-    
-      
-    
-  </div>
-</div>
-
-
-
-        
-      
-    </div>
-    <!-- Custom Files bottomMeta begin -->
-    
-    <!-- Custom Files bottomMeta end -->
-  </div>
-
-
-  
-  
-
-  
-    <div class="prev-next">
-      
-        <a class='prev' href='/2026/10/05/%E8%A7%A3%E5%86%B3github%E6%8E%A8%E9%80%81%E8%B6%85%E6%97%B6%EF%BC%9AFailed-to-connect-to-github-com-port-443-Timed-out/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>解决github推送超时：Failed to connect to github.com port 443: Timed out.</p>
-          <p class='content'>解决办法：换成 SSH 协议1. 先在本地生成 ssh 密钥，添加到 Github1.打开 git bash，生成密钥（一路回车）。
-1ssh-keygen -t ed25519 -C &quo...</p>
-        </a>
-      
-      
-        <a class='next' href='/2024/05/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/'>
-          <p class='title'>计算机网络-网络层<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>网络层网络层功能提供主机到主机的通信服务，将分组经过多个网路和多段链路传输到主机。
-网络层分为数据平面和控制平面，数据平面进行分组转发，控制平面进行路由选择
-TCP&#x2F;IP中的网络层向上...</p>
-        </a>
-      
-    </div>
-  
-  <!-- Custom Files postEnd begin-->
-  
-  <!-- Custom Files postEnd end-->
-</article>
-
-
   
 
 
-  <article class="post white-box shadow floatable blur" id="comments">
-    <span hidden>
-      <meta itemprop="discussionUrl" content="/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/index.html#comments">
-    </span>
-    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-
-    <div id="layoutHelper-comments"></div>
-
-  </article>
-
-
-
-
-
-
+  
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2647,56 +2437,161 @@ TCP&#x2F;IP中的网络层向上...</p>
     
     
       
+<section class="widget blogger desktop mobile pjax">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box circle' href='/about/'>
+          <img no-lazy src='https://gcore.jsdelivr.net/gh/Gaesar/Gaesar.github.io@main/pic/202405191504866.jpg'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>Gaesar</h2>
+        
+        
+          <p>Jacques Zhao</p>
+
+        
+        
+          <p><span id="jinrishici-sentence">Gaesar</span></p>
+          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="mailto:#你的邮箱"
+              class="social fa-solid fa-envelope flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+    
+  
+
+  
+    
+    
+      
+
+    
+  
+
+  
+    
+    
+      
+  
+  <section class="widget tagcloud desktop mobile pjax">
+    
+  <header>
+    
+      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <a href="/tags/bug%E5%A4%8D%E7%9B%98/" style="font-size: 14px; color: #999">bug复盘</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/%E4%BB%8E0%E5%AD%A6%E4%B9%A0Agent/" style="font-size: 14px; color: #999">从0学习Agent</a> <a href="/tags/%E5%BA%95%E5%B1%82%E6%96%B9%E6%B3%95%E8%AE%BA/" style="font-size: 14px; color: #999">底层方法论</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 24px; color: #555">计算机网络</a>
+    </div>
+  </section>
+
+
+    
+  
+
+  
+    
+    
+      
+<section class="widget desktop pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <div class="webinfo">
+      
+        <div class="webinfo-item">
+          <div>文章数目：</div>
+          <div>14 篇</div>
+        </div>
+      
+
+      
+        <div class="webinfo-item">
+          <div>已运行时间：</div>
+          <div id="webinfo-runtime-count"></div>
+        </div>
+      
+
+
+      
+
+      
+
+      
+
+      
+        <div class="webinfo-item">
+          <div>最后活动时间：</div>
+          <div id="last-update-show">2026-10-05 日</div>
+        </div>
+      
+    </div>
+  </div>
+</section>
+
+    
+  
+
+  
+    
+    
+      
+
+<section class="widget desktop mobile pjax">
+  
+  <header>
+    
+      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
+    
+  </header>
+
+
+  <div class='content'>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2026/10/05/%E8%A7%A3%E5%86%B3github%E6%8E%A8%E9%80%81%E8%B6%85%E6%97%B6%EF%BC%9AFailed-to-connect-to-github-com-port-443-Timed-out/"><div class="item"><time>2026-10-05</time></div><span>解决github推送超时：Failed to connect to github.com port 443: Timed out.</span></a></li><li><a class="widget-last" href="/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/"><div class="item"><time>2026-10-04</time></div><span>大模型基础</span></a></li><li><a class="widget-last" href="/2024/05/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/"><div class="item"><time>2024-06-12</time></div><span>计算机网络-网络层</span></a></li><li><a class="widget-last" href="/2024/05/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%BF%90%E8%BE%93%E5%B1%82/"><div class="item"><time>2024-05-23</time></div><span>计算机网络-运输层</span></a></li><li><a class="widget-last" href="/2024/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/"><div class="item"><time>2024-05-21</time></div><span>计算机网络-应用层</span></a></li></ul>
+  </div>
+</section>
+
     
   
 
 
 <div class="widget-sticky pjax">
 
-  
-  
-
-
-  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
-    
-  <header>
-    
-      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
-    
-  </header>
-
-
-    <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90%E5%9B%9E%E7%AD%94%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-text">大模型生成回答的工作原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%B0%83%E7%94%A8"><span class="toc-text">大模型的调用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%AF%B9%E8%AF%9D%E4%B8%AD%E7%9A%84%E5%9B%9B%E7%A7%8D%E8%A7%92%E8%89%B2"><span class="toc-text">大模型对话中的四种角色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E8%AE%B0%E5%BF%86"><span class="toc-text">大模型的记忆</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%87%A0%E7%82%B9%E9%99%90%E5%88%B6"><span class="toc-text">大模型的几点限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A7%E5%88%B6%E5%A4%A7%E6%A8%A1%E5%9E%8B%E7%94%9F%E6%88%90%E7%9A%84%E6%96%87%E6%9C%AC%E8%B4%A8%E9%87%8F%EF%BC%88prompt-%E5%B7%A5%E7%A8%8B%EF%BC%89"><span class="toc-text">控制大模型生成的文本质量（prompt 工程）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E6%B5%8B%E8%AF%95"><span class="toc-text">实验测试</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%B5%8B%E8%AF%95system-prompt"><span class="toc-text">1.测试system prompt</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%B5%8B%E8%AF%95%E8%AE%B0%E5%BF%86%E5%8A%9F%E8%83%BD"><span class="toc-text">2.测试记忆功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%B5%8B%E8%AF%95%E6%B8%A9%E5%BA%A6%E5%8F%82%E6%95%B0"><span class="toc-text">3.测试温度参数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C%E6%BA%90%E7%A0%81"><span class="toc-text">实验源码</span></a></li></ol></li></ol>
-    </div>
-  </section>
-
-  
-
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
-
-  <div class="pjax">
-    <!-- pjax占位 -->
-  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -2724,14 +2619,13 @@ TCP&#x2F;IP中的网络层向上...</p>
 </aside>
 
 
-
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=true;
+  pdata.ispage=false;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3305,7 +3199,7 @@ TCP&#x2F;IP中的网络层向上...</p>
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://Gaesar.github.io/","name":"Gaesar"}},{"@type":"ListItem","position":3,"item":{"@id":"https://Gaesar.github.io/2026/10/04/大模型基础/","name":"大模型基础"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Gaesar","url":"https://Gaesar.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","description":""},"publisher":{"@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://Gaesar.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"大模型基础","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://gaesar.github.io/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/"},"author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/"},"publisher":{"@type":"Organization","name":"Gaesar","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://gaesar.github.io/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/","wordCount":0,"datePublished":"2026-10-04T14:01:36.000Z","dateModified":"2026-10-04T14:22:38.191Z","keywords":"从0学习Agent","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://Gaesar.github.io/","name":"Gaesar"}},{"@type":"ListItem","position":2,"item":{"@id":"https://Gaesar.github.io/tags/bug复盘/","name":"bug复盘"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Gaesar","url":"https://Gaesar.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","description":""},"publisher":{"@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://Gaesar.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/"},"publisher":{"@type":"Organization","name":"Gaesar","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
