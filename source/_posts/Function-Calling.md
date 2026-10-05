@@ -2,6 +2,7 @@
 title: Function Calling
 date: 2026-10-05 15:03:18
 categories: [AI-Agent]
+author: Gaesar
 tags: 
   - 从0学习Agent
 ---

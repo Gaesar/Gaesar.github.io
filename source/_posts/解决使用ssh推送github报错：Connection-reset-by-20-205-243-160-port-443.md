@@ -2,6 +2,7 @@
 title: 解决使用ssh推送github报错：Connection reset by 20.205.243.160 port 443
 date: 2026-10-05 00:35:27
 tags: bug复盘
+author: Gaesar
 ---
 
 ## 报错含义

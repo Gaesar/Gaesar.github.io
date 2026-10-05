@@ -2,6 +2,7 @@
 title: '解决github推送超时：Failed to connect to github.com port 443: Timed out.'
 date: 2026-10-05 00:19:30
 tags: bug复盘
+author: Gaesar
 ---
 
 ## 解决办法：换成 SSH 协议
