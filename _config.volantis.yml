@@ -3,9 +3,10 @@
 navbar:
   visiable: auto # always, auto
   logo: # choose [img] or [icon + title]
-    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+#    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    img:
     icon:
-    title:
+    title: Gaesar
   menu:
     - name: 博客
       icon: fa-solid fa-rss
@@ -16,17 +17,21 @@ navbar:
     - name: 标签
       icon: fa-solid fa-tags
       url: tags/
-    - name: 归档
-      icon: fa-solid fa-archive
-      url: archives/
-    - name: 友链
-      icon: fa-solid fa-link
-      url: friends/
-    - name: 关于
-      icon: fa-solid fa-info-circle
-      url: about/
-  search: Search...   # Search bar placeholder
+#    - name: 归档
+#      icon: fa-solid fa-archive
+#      url: archives/
+#    - name: 友链
+#      icon: fa-solid fa-link
+#      url: friends/
+#    - name: 关于
+#      icon: fa-solid fa-info-circle
+#      url: about/
+    - name: 明暗切换
+      icon: fas fa-moon
+      toggle: darkmode
+  search: 搜一下...   # Search bar placeholder
 ############################### Navigation Bar ############################### > end
+
 pages:
   # 友链页面配置
   friends:
@@ -41,7 +46,7 @@ site_footer:
       url: mailto:#你的邮箱
     - icon: fab fa-github
       url: #你的github地址
-  copyright: '[Copyright © 2017-2024 #版权](/)'
+  copyright: '[Copyright © 2024-2029 #版权](/)'
   # You can add your own property here. (Support markdown, for example: br: '<br>')
   br: '<br>'
 ############################### Cover ############################### > start
@@ -56,7 +61,7 @@ cover:
   # background: https://bing.ioliu.cn/v1/rand?w=1920&h=1200
   logo: # https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-Cover@3x.png
   title: 'Gaesar的笔记本'
-  subtitle: <div id="binft">穷且益坚，不坠青云之志</div>
+  subtitle: <div id="binft">盛年不重来，一日难再晨。及时当勉励，岁月不待人。</div>
   search: 搜一下 # search bar placeholder 搜索栏里面显示的东西
   features:
     - name: 主页
@@ -65,6 +70,9 @@ cover:
     - name: 标签
       icon: #
       url: tags/
+    - name: 分类
+      icon: #
+      url: categories/
 ############################### Cover ############################### > end
 
 ############################### Sidebar ############################### > start
@@ -85,13 +93,13 @@ sidebar:
       shape: circle # circle, rectangle
       url: /about/
       title: Gaesar #名字
-      subtitle: Jacques Zhao
+      subtitle: 
       jinrishici: true # Poetry Today. You can set a string, and it will be displayed when loading fails.
       social:
-        - icon: fa-solid fa-envelope
-          url: mailto:#你的邮箱
+#        - icon: fa-solid fa-envelope
+#          url: mailto:gizhaokai2002@outlook.com#你的邮箱
         - icon: fab fa-github
-          url: #你的github地址
+          url: https://github.com/Gaesar  #你的github地址
 
     # ---------------------------------------
     # toc widget (valid only in articles)
@@ -149,7 +157,7 @@ sidebar:
           unit: '篇'
         runtime:
           enable: true
-          data: '2022/12/04'    # 填写建站日期
+          data: '2024/5/04'    # 填写建站日期
           text: '已运行时间：'
           unit: '天'
         visitcounter:
@@ -191,6 +199,18 @@ sidebar:
         content:
           - '您的赞对我来说很重要，如果您喜欢本主题，希望能够给下面的项目点个赞来支持一下。'
 ############################### Sidebar ############################### > end
+comments:
+  type: giscus
+  giscus:
+    repo: Gaesar/Gaesar.github.io
+    repo_id: "R_kgDOL9V2PA"
+    category: Announcements
+    category_id: "DIC_kwDOL9V2PM4DHD2l"
+    mapping: pathname
+    reactions_enabled: 1
+    lang: zh-CN
+    theme: preferred_color_scheme
+
 plugins:
   parallax:
     enable: true
@@ -200,3 +220,7 @@ plugins:
     fade: 1500            # fade duration (ms) (Not more than 1500)
     images:               # For personal use only. At your own risk if used for commercial purposes !!!
       - https://cdn.jsdelivr.net/gh/Gaesar/Gaesar.github.io@main/pic/202405191337870.jpg
+  darkmode:
+    enable: true
+    default: auto
+
