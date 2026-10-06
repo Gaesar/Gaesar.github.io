@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
-  <link rel="canonical" href="https://Gaesar.github.io/2024/05/18/git工作流/"/>
+  <link rel="canonical" href="https://Gaesar.github.io/2026/10/06/检索/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,21 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>git工作流 - Gaesar</title>
-  <meta name="keywords" content="git,null">
+  <title>检索 - Gaesar</title>
+  <meta name="keywords" content="从0学习Agent,null">
   <meta desc name="description" content="Gaesar - Jacques Zhao - Gaesar">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="git工作流">
-<meta property="og:url" content="https://gaesar.github.io/2024/05/18/git%E5%B7%A5%E4%BD%9C%E6%B5%81/index.html">
+<meta property="og:title" content="检索">
+<meta property="og:url" content="https://gaesar.github.io/2026/10/06/%E6%A3%80%E7%B4%A2/index.html">
 <meta property="og:site_name" content="Gaesar">
-<meta property="og:description" content="git 工作流做修改1.git clone 把 remote中的项目克隆到本地  2.修改代码的时候在本地建立一个新的feature branch，避免破坏主分支，并且有利于多人合作 ​	复制当前的branch到新的branch  3.git diff查看做的修改  4.git add添加修改的文件到暂存区，把想要commit的文件告知给git  5.git commit把修改提交到本地git">
+<meta property="og:description" content="检索大模型应用中检索的场景1.聊天机器人从知识库中检索相关知识。 2.编码Agent从代码文件中检索代码片段。 大模型应用中检索的两种方案语义检索检索相关的内容，不是精确匹配，是语义上的匹配。 语法检索使用grep命令精确匹配。 RAG流程RAG属于语义检索，把检索的结果加入prompt让模型回答。 分为两个阶段： 离线阶段构建索引，加载文档，切分文档，将每一个文档块转为向量存储到向量库中。 在线">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-05-18T15:56:28.000Z">
-<meta property="article:modified_time" content="2024-05-18T15:57:32.194Z">
+<meta property="article:published_time" content="2026-10-06T11:30:35.000Z">
+<meta property="article:modified_time" content="2026-10-06T15:18:25.288Z">
 <meta property="article:author" content="Jacques Zhao">
-<meta property="article:tag" content="git">
+<meta property="article:tag" content="从0学习Agent">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2441,7 +2441,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/18/git工作流/">
+  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/06/检索/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Gaesar">
   </span>
@@ -2462,7 +2462,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        git工作流
+        检索
       </h1>
       <div class='new-meta-box'>
         
@@ -2479,14 +2479,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
             
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/AI-Agent/">AI-Agent</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/AI-Agent/" itemprop="url"><span itemprop="name">AI-Agent</span></a>
+      </span>
+    
+  </div>
+
 
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-05-18T23:56:28+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2026-10-06T19:30:35+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：May 18, 2024</p>
+    <p>发布于：Oct 6, 2026</p>
   </a>
 </div>
 
@@ -2509,59 +2519,55 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <h1 id="git-工作流"><a href="#git-工作流" class="headerlink" title="git 工作流"></a>git 工作流</h1><h2 id="做修改"><a href="#做修改" class="headerlink" title="做修改"></a>做修改</h2><p>1.git clone 把 remote中的项目克隆到本地</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200138594.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200138594.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518200138594"></p>
-<p>2.修改代码的时候在本地建立一个新的feature branch，避免破坏主分支，并且有利于多人合作</p>
-<p>​	复制当前的branch到新的branch</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200513376.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200513376.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518200513376"></p>
-<p>3.git diff查看做的修改</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200704883.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200704883.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518200704883"></p>
-<p>4.git add添加修改的文件到暂存区，把想要commit的文件告知给git</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200827002.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200827002.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518200827002"></p>
-<p>5.git commit把修改提交到本地git</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200929709.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518200929709.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518200929709"></p>
-<p>6.git push把分支同步到远端 </p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201036636.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201036636.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518201036636"></p>
-<p>​	此时有可能别人修改了主分支</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201202335.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201202335.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518201202335"></p>
-<p>7.切换到local main分支，把远端的main分支同步到local</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201354944.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201354944.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518201354944"></p>
-<p>8.切换到local feature分支，rebase一下，rebase就是先把我的修改放到一边，把主分支的同步过来，然后再把我的修改放上去</p>
-<p>​	如果出现了rebase conflic需要手动选择保留哪一个</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201649833.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201649833.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518201649833"></p>
-<p>​	使用rebase相当于在最新的修改上添加了我们的修改，比merge更好</p>
-<p>9.把当前的feature同步到远端</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201948312.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518201948312.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518201948312"></p>
-<ol start="10">
-<li><p>远端合并代码到主分支, pull request，主分支是属于整个项目的，不属于任何个人，feature分支是属于个人的，项目的主人负责审查代码和整合代码</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518202303533.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518202303533.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518202303533"></p>
-</li>
-<li><p>把一个分支上的所有commit合并成一个commit合并到分支中，为了使main branch commit history尽可能地简洁，main branch每一个commit都是正常工作的</p>
-</li>
-</ol>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518202514111.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518202514111.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518202514111"></p>
-<p>​	合并成功后会把远端这个分支删除 delete branch</p>
-<p>12.在本地删除branch</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518202830422.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518202830422.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518202830422"></p>
-<p>13.再次从主分支上pull最新的主分支下来</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518202937294.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518202937294.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518202937294"></p>
-<h2 id="修改撤回"><a href="#修改撤回" class="headerlink" title="修改撤回"></a>修改撤回</h2><p>1.修改了磁盘文件，但还没有add到暂存区</p>
-<p>​	git check out撤销，git restore也行</p>
-<p>2.add到暂存区，但还没commit到本地git</p>
-<p>​	git reset撤销，git resote –staged也行，移出暂存区</p>
-<p>​	git check out HEAD，移出暂存区并且恢复磁盘文件，HEAD代表最新的一次commit</p>
-<p>3.commit到本地git了，但还没有push到remote</p>
-<p>​	git reset –soft HEAD~1 恢复到前一个commit的状态，只是移出了本地git</p>
-<p>​	git reset HEAD<del>1 相当于 git reset –mixed HEAD</del>1. 移出git，然后再移出暂存区</p>
-<p>​	git reset –hard HEAD~1 恢复到前一个commit的初始状态， 移出git，然后再移出暂存区，删除磁盘修改</p>
-<p>​	git revert HEAD 增加一个commit和前一个commit相反</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518205919178.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518205919178.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518205919178"></p>
-<p>reset只能回到之前一个commit的状态，revert可以去除之前的一个commit的效果</p>
-<p><img src="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518210108065.png" class="lazyload" data-srcset="/../assets/git%E5%B7%A5%E4%BD%9C%E6%B5%81/image-20240518210108065.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="image-20240518210108065"></p>
-<p>4.push到了remote</p>
-<p>公有分支只能向前走，不能后退，只能使用git revert命令</p>
-<p>个人分支只有自己使用，把这个commit直接删掉</p>
-<p>git reset –hard HEAD~1 git push -f</p>
+    <h1 id="检索"><a href="#检索" class="headerlink" title="检索"></a>检索</h1><h2 id="大模型应用中检索的场景"><a href="#大模型应用中检索的场景" class="headerlink" title="大模型应用中检索的场景"></a>大模型应用中检索的场景</h2><p>1.聊天机器人从知识库中检索相关知识。</p>
+<p>2.编码Agent从代码文件中检索代码片段。</p>
+<h2 id="大模型应用中检索的两种方案"><a href="#大模型应用中检索的两种方案" class="headerlink" title="大模型应用中检索的两种方案"></a>大模型应用中检索的两种方案</h2><h3 id="语义检索"><a href="#语义检索" class="headerlink" title="语义检索"></a>语义检索</h3><p>检索相关的内容，不是精确匹配，是语义上的匹配。</p>
+<h3 id="语法检索"><a href="#语法检索" class="headerlink" title="语法检索"></a>语法检索</h3><p>使用grep命令精确匹配。</p>
+<h2 id="RAG流程"><a href="#RAG流程" class="headerlink" title="RAG流程"></a>RAG流程</h2><p>RAG属于语义检索，把检索的结果加入prompt让模型回答。</p>
+<p>分为两个阶段：</p>
+<p>离线阶段构建索引，加载文档，切分文档，将每一个文档块转为向量存储到向量库中。</p>
+<p>在线阶段查询向量库，将用户问题转为向量，在向量库中做相似度匹配，取出最相近的top-k个文档，加入prompt让模型回答。</p>
+<blockquote>
+<p>检索流程</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"># 离线：建索引</span><br><span class="line">docs   = 加载文档()</span><br><span class="line">chunks = 切分(docs, 每块约几百字)               # ① Chunking</span><br><span class="line">vectors = [embedding模型(c) for c in chunks]   # ② 向量化</span><br><span class="line">向量库.存入(chunks, vectors)                    # ③ 存储</span><br><span class="line"></span><br><span class="line"># 在线：查询</span><br><span class="line">qv   = embedding模型(用户问题)</span><br><span class="line">hits = 向量库.相似度top_k(qv)                   # ④ 召回</span><br><span class="line">answer = 调用模型(f&quot;根据以下资料回答：&#123;hits&#125;\n&quot;  # ⑤ 生成</span><br><span class="line">                  f&quot;问题：&#123;用户问题&#125;&quot;)</span><br></pre></td></tr></table></figure>
+
+<p>注意事项：</p>
+<p>1.切分的太大，语义不准确，精度下降；切分太小，一个部分可能被分为两块。</p>
+<p>一般按照文档的标题、段落做切分，相邻两块保留一部分重叠，防止边界信息丢失。</p>
+<p>对于代码，按照函数、类做切分。</p>
+<p>总原则：宁愿切的大也不能切的太碎。</p>
+<p>2.Embedding选型，选型看三件事：目标语言效果（查 MTEB&#x2F;C-MTEB 评测榜）、向量维度（影响存储和检索速度）、能否私有部署。</p>
+<p>3.向量库，按量级选工具：几千个向量，numpy 数组暴力算余弦就够；数十万级用 FAISS（单机索引库）；要增删改查、元数据过滤、生产运维，再上 Milvus &#x2F; Qdrant 这类专门数据库。</p>
+<p>4.召回优化</p>
+<ul>
+<li><strong>混合检索</strong>：词法 + 语义各召回一批再合并。</li>
+<li><strong>rerank</strong>：先粗召回 top-50，再用精排模型选出 top-5。</li>
+<li><strong>query 改写</strong>：让 LLM 把口语问题改写成更适合检索的形式（”那个报错咋回事” → “NullPointerException 原因”）。</li>
+</ul>
+<p>5.生成</p>
+<p>把召回块拼进 prompt 时带上来源（文件名、段落号），让答案可溯源。</p>
+<p>top_k 不是越多越好，召回 20 块全塞进去，预算爆炸且信噪比骤降，常见起点 3-5 块。</p>
+<h2 id="RAG评估"><a href="#RAG评估" class="headerlink" title="RAG评估"></a>RAG评估</h2><p>调 RAG 先看检索质量（该找到的找到了吗）再看生成质量（找到了答得对吗）。</p>
+<p>绝大多数”RAG 效果差”是检索质量的问题，不是生成质量的问题。</p>
+<p>检索质量可以脱离模型单独测：拿 20 个问题人工标注该命中的文档，算命中率。系统化的评测框架（如 RAGAS）也是这个思路的工程化。</p>
+<p>相似度分数只用来排序，不同向量模型的分数分布完全不同，不能跨模型比较。</p>
+<h2 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h2><p>主流的coding agent没有用rag而是使用grep</p>
+<p>原因：</p>
+<p>1.代码检索需要精确匹配，使用语义检索反而会带来噪音。</p>
+<p>2.代码随时都会修改，rag需要离线建立索引，每次修改都重新建立不太现实。</p>
+<p>3.Agent理解用户后发出的grep命令，本身就包含语义了。</p>
+<p>4.Agent有循环，可以多次尝试。</p>
+<p>使用rag的情况：</p>
+<p>1.查询很难精确匹配上，例如用户向客服的提问。</p>
+<p>2.知识库几乎不变，不需要频繁建立索引。</p>
+<p>3.要求一次命中，没有重试的机会。</p>
+<h2 id="二者结合Agentic-RAG"><a href="#二者结合Agentic-RAG" class="headerlink" title="二者结合Agentic RAG"></a>二者结合Agentic RAG</h2><p>把检索作为工具，让Agent决定使用什么检索。</p>
+<p>优点是：能重试，能组合多种检索方式</p>
+<p>缺点是：重试次数多，导致延迟和成本高。</p>
+<h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><p>1.增加了grep工具，成功触发，并正确使用，得到了正确结果。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br></pre></td><td class="code"><pre><span class="line">你&gt; 帮我检索出./code_data文件下所有有关矩阵操作的函数。最后告诉我这些函数所在的文件及其位置。</span><br><span class="line">这是第 1 次循环...</span><br><span class="line">MiniAgent observation ...</span><br><span class="line">MiniAgent Reasoning &gt; 用户想让我检索 ./code_data 目录下所有有关矩阵操作的函数，并告诉文件及位置。让我先看看目录结构。</span><br><span class="line"></span><br><span class="line">执行了bash命令：ls -la ./code_data 2&gt;/dev/null || echo &quot;NOT FOUND&quot;</span><br><span class="line">MiniAgent Acting &gt;run_bash的执行结果：输出是：stdout:</span><br><span class="line">&quot;NOT FOUND&quot;</span><br><span class="line"></span><br><span class="line">错误是：stderr:</span><br><span class="line">系统找不到指定的路径。</span><br><span class="line"></span><br><span class="line">MiniAgent Acting &gt;list_files的执行结果：目录 D:\00agent learn\code\6.3 下共 6 个条目：</span><br><span class="line">[目录] __pycache__</span><br><span class="line">[文件] agent_loop.py</span><br><span class="line">[目录] code_data</span><br><span class="line">[文件] compact_prompt.py</span><br><span class="line">[文件] session.py</span><br><span class="line">[目录] sessions</span><br><span class="line">这是第 2 次循环...</span><br><span class="line">MiniAgent observation ...</span><br><span class="line">MiniAgent Reasoning &gt; The `code_data` directory exists in current directory. The `./code_data` path failed likely because of Windows shell issue? Actually it said &quot;系统找不到指定的路径&quot; - maybe the working dir differs. Let me list `code_data`.</span><br><span class="line"></span><br><span class="line">MiniAgent Acting &gt;list_files的执行结果：目录 D:\00agent learn\code\6.3\code_data 下共 6 个条目：</span><br><span class="line">[目录] __pycache__</span><br><span class="line">[文件] add.py</span><br><span class="line">[文件] div.py</span><br><span class="line">[文件] mul.py</span><br><span class="line">[文件] sqr.py</span><br><span class="line">[文件] sub.py</span><br><span class="line">执行了bash命令：cd &quot;D:\00agent learn\code\6.3&quot; &amp;&amp; dir code_data /s /b</span><br><span class="line">MiniAgent Acting &gt;run_bash的执行结果：输出是：stdout:</span><br><span class="line">D:\00agent learn\code\6.3\code_data\add.py</span><br><span class="line">D:\00agent learn\code\6.3\code_data\div.py</span><br><span class="line">D:\00agent learn\code\6.3\code_data\mul.py</span><br><span class="line">D:\00agent learn\code\6.3\code_data\sqr.py</span><br><span class="line">D:\00agent learn\code\6.3\code_data\sub.py</span><br><span class="line">D:\00agent learn\code\6.3\code_data\__pycache__</span><br><span class="line">D:\00agent learn\code\6.3\code_data\__pycache__\add.cpython-37.pyc</span><br><span class="line">D:\00agent learn\code\6.3\code_data\__pycache__\mul.cpython-37.pyc</span><br><span class="line">D:\00agent learn\code\6.3\code_data\__pycache__\sub.cpython-37.pyc</span><br><span class="line"></span><br><span class="line">错误是：stderr:</span><br><span class="line"></span><br><span class="line">这是第 3 次循环...</span><br><span class="line">MiniAgent observation ...</span><br><span class="line">MiniAgent Reasoning &gt; There are 5 python files. Let me read them all.</span><br><span class="line"></span><br><span class="line">MiniAgent Acting &gt;read_file的执行结果：code_data/add.py文件的内容为：</span><br><span class="line">def add(a, b):</span><br><span class="line">    return a + b</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def complex_add(a, b):</span><br><span class="line">    return (a[0] + b[0], a[1] + b[1])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def vector_add(a, b):</span><br><span class="line">    return (a[0] + b[0], a[1] + b[1], a[2] + b[2])</span><br><span class="line"></span><br><span class="line">def matrix_add(a, b):</span><br><span class="line">    return [[a[i][j] + b[i][j] for j in range(len(b[0]))] for i in range(len(a))]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">MiniAgent Acting &gt;read_file的执行结果：code_data/sub.py文件的内容为：</span><br><span class="line">def sub(x, y):</span><br><span class="line">    return x - y</span><br><span class="line"></span><br><span class="line">def complex_sub(x, y):</span><br><span class="line">    return (x[0] - y[0], x[1] - y[1])</span><br><span class="line"></span><br><span class="line">def vector_sub(x, y):</span><br><span class="line">    return [a - b for a, b in zip(x, y)]</span><br><span class="line"></span><br><span class="line">def matrix_sub(x, y):</span><br><span class="line">    if len(x) != len(y) or any(len(row1) != len(row2) for row1, row2 in zip(x, y)):</span><br><span class="line">        raise ValueError(&quot;the size of tow matrix must be the same!&quot;)</span><br><span class="line">    result = []</span><br><span class="line">    for i in range(len(x)):</span><br><span class="line">        row = [x[i][j] - y[i][j] for j in range(len(x[i]))]</span><br><span class="line">        result.append(row)</span><br><span class="line">    return result</span><br><span class="line">MiniAgent Acting &gt;read_file的执行结果：code_data/mul.py文件的内容为：</span><br><span class="line">def mul(x, y):</span><br><span class="line">    return x * y</span><br><span class="line"></span><br><span class="line">def complex_mul(x, y):</span><br><span class="line">    return complex(x.real * y.real - x.imag * y.imag, x.real * y.imag + x.imag * y.real)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def vector_mul(x, y):</span><br><span class="line">    return [x[i] * y[i] for i in range(len(x))]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def matrix_mul(x, y):</span><br><span class="line">    return [[sum(a*b for a, b in zip(c_row, r)) for c_row in x] for r in zip(*y)]</span><br><span class="line"></span><br><span class="line">MiniAgent Acting &gt;read_file的执行结果：code_data/div.py文件的内容为：</span><br><span class="line">def div(a, b):</span><br><span class="line">    if b == 0:</span><br><span class="line">        raise ValueError(&quot;除数不能为0&quot;)</span><br><span class="line">    return a / b</span><br><span class="line"></span><br><span class="line">MiniAgent Acting &gt;read_file的执行结果：code_data/sqr.py文件的内容为：</span><br><span class="line">def sqr_root(x):</span><br><span class="line">    if x &lt; 0:</span><br><span class="line">        return &quot;负数没有实数平方根&quot;</span><br><span class="line">    elif x == 0 or x == 1:</span><br><span class="line">        return x</span><br><span class="line">    else:</span><br><span class="line">        low = 0</span><br><span class="line">        high = max(1, x)</span><br><span class="line">        while low &lt;= high:</span><br><span class="line">            mid = (low + high) / 2</span><br><span class="line">            sqr = mid * mid</span><br><span class="line">            if sqr == x:</span><br><span class="line">                return mid</span><br><span class="line">            elif sqr &lt; x:</span><br><span class="line">                low = mid + 1</span><br><span class="line">            else:</span><br><span class="line">                high = mid - 1</span><br><span class="line">        # 如果循环结束，则说明找到了最接近的整数平方根</span><br><span class="line">        return round((low + high) / 2)</span><br><span class="line"></span><br><span class="line">这是第 4 次循环...</span><br><span class="line">MiniAgent observation ...</span><br><span class="line">MiniAgent Reasoning &gt; Let me get exact line numbers for the matrix functions.</span><br><span class="line"></span><br><span class="line">执行了grep_code: pattern=(?i)(matrix|矩阵), directory=code_data, file_glob=*.py</span><br><span class="line">MiniAgent Acting &gt;grep_code的执行结果：code_data\add.py:12: def matrix_add(a, b):</span><br><span class="line">code_data\mul.py:12: def matrix_mul(x, y):</span><br><span class="line">code_data\sub.py:10: def matrix_sub(x, y):</span><br><span class="line">code_data\sub.py:12: raise ValueError(&quot;the size of tow matrix must be the same!&quot;)</span><br><span class="line">执行了bash命令：cd &quot;D:\00agent learn\code\6.3\code_data&quot; &amp;&amp; findstr /N /I &quot;def matrix 矩阵 matrix&quot; *.py</span><br><span class="line">MiniAgent Acting &gt;run_bash的执行结果：输出是：stdout:</span><br><span class="line">add.py:1:def add(a, b):</span><br><span class="line">add.py:5:def complex_add(a, b):</span><br><span class="line">add.py:9:def vector_add(a, b):</span><br><span class="line">add.py:12:def matrix_add(a, b):</span><br><span class="line">div.py:1:def div(a, b):</span><br><span class="line">mul.py:1:def mul(x, y):</span><br><span class="line">mul.py:4:def complex_mul(x, y):</span><br><span class="line">mul.py:8:def vector_mul(x, y):</span><br><span class="line">mul.py:12:def matrix_mul(x, y):</span><br><span class="line">sqr.py:1:def sqr_root(x):</span><br><span class="line">sub.py:1:def sub(x, y):</span><br><span class="line">sub.py:4:def complex_sub(x, y):</span><br><span class="line">sub.py:7:def vector_sub(x, y):</span><br><span class="line">sub.py:10:def matrix_sub(x, y):</span><br><span class="line">sub.py:12:        raise ValueError(&quot;the size of tow matrix must be the same!&quot;)</span><br><span class="line"></span><br><span class="line">错误是：stderr:</span><br><span class="line"></span><br><span class="line">这是第 5 次循环...</span><br><span class="line">MiniAgent observation ...</span><br><span class="line">MiniAgent&gt; </span><br><span class="line"></span><br><span class="line">检索完成。两种检索方式（逐文件通读 + 正则搜索）结果一致。</span><br><span class="line"></span><br><span class="line">## 矩阵操作函数（共 3 个）</span><br><span class="line"></span><br><span class="line">| # | 函数名 | 文件 | 位置 | 功能 |</span><br><span class="line">|---|--------|------|------|------|</span><br><span class="line">| 1 | `matrix_add(a, b)` | `code_data/add.py` | 第 12–13 行（def 在第 12 行） | 矩阵加法，列表推导实现 |</span><br><span class="line">| 2 | `matrix_sub(x, y)` | `code_data/sub.py` | 第 10–17 行（def 在第 10 行） | 矩阵减法，带尺寸校验，不匹配抛 `ValueError` |\n| 3 | `matrix_mul(x, y)` | `code_data/mul.py` | 第 12–13 行（def 在第 12 行） | 矩阵乘法（点积形式） |</span><br><span class="line"></span><br><span class="line">## 各文件完整函数索引（便于对照）</span><br><span class="line"></span><br><span class="line">- `code_data/add.py`：`add`(L1)、`complex_add`(L5)、`vector_add`(L9)、**`matrix_add`(L12)**</span><br><span class="line">- `code_data/sub.py`：`sub`(L1)、`complex_sub`(L4)、`vector_sub`(L7)、**`matrix_sub`(L10)**</span><br><span class="line">- `code_data/mul.py`：`mul`(L1)、`complex_mul`(L4)、`vector_mul`(L8)**、`matrix_mul`(L12)**</span><br><span class="line">- `code_data/div.py`：仅 `div`(L1)，**无矩阵_related 函数**</span><br><span class="line">- `code_data/sqr.py`：仅 `sqr_root`(L1)，**无矩阵相关函数**</span><br><span class="line"></span><br><span class="line">补充说明：</span><br><span class="line">1. 未匹配到 `transpose`、`inverse`、`det`、`trace`、`identity` 等其他矩阵操作，该目录只有加、减、乘三类。</span><br><span class="line">2. 相邻的非矩阵同类函数是 `complex_*`（复数）和 `vector_*`（向量），若你要做“矩阵/向量统一重构”，它们是候选。</span><br><span class="line">3. 顺带发现一处隐患（**未改动任何 ydk文件**）：`matrix_mul` 写为 `[[sum(...) for c_row in x] for r in zip(*y)]`,外层遍历 y  ｢列、内层遍历 x 的行，返回结果的行列维度是转置的(m×k 乘 k×n 会得到 n×m),建议改为 `[[sum(a*b for a,b in zip(row, col)) for col in zip(*y)] for row in x]`。需要我修吗</span><br></pre></td></tr></table></figure>
+
 
   </div>
   
@@ -2586,10 +2592,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-05-18T23:57:32+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-10-06T23:18:25+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：May 18, 2024</p>
+    <p>更新于：Oct 6, 2026</p>
   </a>
 </div>
 
@@ -2598,8 +2604,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
   
-  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/git/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>git</p></a></div>
-  <span hidden itemprop="keywords">git</span>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E4%BB%8E0%E5%AD%A6%E4%B9%A0Agent/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>从0学习Agent</p></a></div>
+  <span hidden itemprop="keywords">从0学习Agent</span>
 
 
         
@@ -2612,7 +2618,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gaesar.github.io/2024/05/18/git%E5%B7%A5%E4%BD%9C%E6%B5%81/&title=git工作流 - Gaesar&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gaesar.github.io/2026/10/06/%E6%A3%80%E7%B4%A2/&title=检索 - Gaesar&summary="
           
           >
           
@@ -2624,7 +2630,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://gaesar.github.io/2024/05/18/git%E5%B7%A5%E4%BD%9C%E6%B5%81/&title=git工作流 - Gaesar&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://gaesar.github.io/2026/10/06/%E6%A3%80%E7%B4%A2/&title=检索 - Gaesar&summary="
           
           >
           
@@ -2636,7 +2642,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gaesar.github.io/2024/05/18/git%E5%B7%A5%E4%BD%9C%E6%B5%81/&title=git工作流 - Gaesar&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gaesar.github.io/2026/10/06/%E6%A3%80%E7%B4%A2/&title=检索 - Gaesar&summary="
           
           >
           
@@ -2669,20 +2675,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/05/19/%E8%BF%90%E8%90%A5%E4%BA%BA%E7%94%9F/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>运营人生</p>
-          <p class='content'> 目标–&gt;思考–&gt;行动–&gt;评价反馈
-确立目标–&gt;思考方法–&gt;认真行动–&gt;反馈调整
-以往经验来看，可能是缺乏反馈这个步骤？
-</p>
-        </a>
       
-      
-        <a class='next' href='/2024/05/18/%E6%B5%8B%E8%AF%95/'>
-          <p class='title'>测试<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>使用github page搭建个人博客参考连接：
-【实操】基于 GitHub Pages + Hexo 搭建个人博客_github pages hexo-CSDN博客
-从零开始用Hexo-Git...</p>
+        <a class='next' href='/2026/10/06/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/'>
+          <p class='title'>上下文工程<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>上下文工程随着任务进行，请求中包含的token总量会越来越多，但模型可以处理的token量不能无限制增长，最终会受到模型上下文窗口的限制。
+随着任务轮数的增长，工具调用请求、工具调用执行结果不断...</p>
         </a>
       
     </div>
@@ -2698,7 +2695,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/05/18/git%E5%B7%A5%E4%BD%9C%E6%B5%81/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2026/10/06/%E6%A3%80%E7%B4%A2/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2740,7 +2737,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%81%9A%E4%BF%AE%E6%94%B9"><span class="toc-text">做修改</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BF%AE%E6%94%B9%E6%92%A4%E5%9B%9E"><span class="toc-text">修改撤回</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8%E4%B8%AD%E6%A3%80%E7%B4%A2%E7%9A%84%E5%9C%BA%E6%99%AF"><span class="toc-text">大模型应用中检索的场景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BA%94%E7%94%A8%E4%B8%AD%E6%A3%80%E7%B4%A2%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E6%A1%88"><span class="toc-text">大模型应用中检索的两种方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E6%A3%80%E7%B4%A2"><span class="toc-text">语义检索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E6%B3%95%E6%A3%80%E7%B4%A2"><span class="toc-text">语法检索</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RAG%E6%B5%81%E7%A8%8B"><span class="toc-text">RAG流程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RAG%E8%AF%84%E4%BC%B0"><span class="toc-text">RAG评估</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#grep"><span class="toc-text">grep</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E8%80%85%E7%BB%93%E5%90%88Agentic-RAG"><span class="toc-text">二者结合Agentic RAG</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9E%E9%AA%8C"><span class="toc-text">实验</span></a></li></ol>
     </div>
   </section>
 
@@ -3494,7 +3491,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://Gaesar.github.io/","name":"Gaesar"}},{"@type":"ListItem","position":3,"item":{"@id":"https://Gaesar.github.io/2024/05/18/git工作流/","name":"git工作流"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Gaesar","url":"https://Gaesar.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","description":""},"publisher":{"@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://Gaesar.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"git工作流","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://gaesar.github.io/2024/05/18/git%E5%B7%A5%E4%BD%9C%E6%B5%81/"},"author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/"},"publisher":{"@type":"Organization","name":"Gaesar","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://gaesar.github.io/2024/05/18/git%E5%B7%A5%E4%BD%9C%E6%B5%81/","wordCount":0,"datePublished":"2024-05-18T15:56:28.000Z","dateModified":"2024-05-18T15:57:32.194Z","keywords":"git","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://Gaesar.github.io/","name":"Gaesar"}},{"@type":"ListItem","position":2,"item":{"@id":"https://Gaesar.github.io/categories/AI-Agent/","name":"AI-Agent"}},{"@type":"ListItem","position":3,"item":{"@id":"https://Gaesar.github.io/2026/10/06/检索/","name":"检索"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Gaesar","url":"https://Gaesar.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","description":""},"publisher":{"@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://Gaesar.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"检索","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://gaesar.github.io/2026/10/06/%E6%A3%80%E7%B4%A2/"},"author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/"},"publisher":{"@type":"Organization","name":"Gaesar","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://gaesar.github.io/2026/10/06/%E6%A3%80%E7%B4%A2/","wordCount":0,"datePublished":"2026-10-06T11:30:35.000Z","dateModified":"2026-10-06T15:18:25.288Z","articleSection":"AI-Agent","keywords":"从0学习Agent","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
