@@ -1756,7 +1756,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1791375560710),
+    lastupdate: new Date(1791389315636),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2468,6 +2468,74 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/07/MultiAgent/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Gaesar">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Gaesar">
+    <meta itemprop="description" content="">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2026/10/07/MultiAgent/"  itemprop="url">
+        MultiAgent
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        MultiAgent值得采用多Agent协作的情况
+需要立场隔离：自己审查自己天然带有辩护立场，立场隔离的手段是独立的 messages，不共享历史。
+需要权限隔离：角色 prompt 只影响行为倾向，真正的边界来自执行层，通过提供的工具，限制Agent可能的行为。
+上下文规模需要分治：任务大到一个窗口装不下，就多开几个窗口， +每个执行者只装自己那一片的上下文。
+
+相反，不需要隔离立场、不...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2026-10-07T20:23:20+08:00">2026-10-07</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/AI-Agent/">AI-Agent</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/AI-Agent/" itemprop="url"><span itemprop="name">AI-Agent</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2026/10/07/MultiAgent/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/06/MCP/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Gaesar">
@@ -3035,75 +3103,24 @@ Connection reset 含义：电脑发出连接请求，远端服务器收到后，
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/04/大模型基础/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/"  itemprop="url">
-        大模型基础
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        大模型生成回答的工作原理大模型首先在互联网上的大量语料中进行学习，学习到了词与词之间的关联。
-然后拿着用户的信息，根据之前的学习，去推断概率最大的下一个词是什么，把这个概率最大的词取出拼接到用户的信息中，再根据这个拼接的信息继续推断概率最大的下一个词是什么，就这样不断循环，一个词一个词地生成，直到推断出结束符，回答完成。
-控制大模型选词的参数
-temperature（0~2）：温度，控制输出...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2026-10-04T22:01:36+08:00">2026-10-04</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/AI-Agent/">AI-Agent</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/AI-Agent/" itemprop="url"><span itemprop="name">AI-Agent</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
+    
+      <br>
+      <div class="prev-next">
+        
+        <p class="current">
+          1 / 2
+        </p>
+        
+          <a class="next" rel="next" href="/archives/2026/10/page/2/">
+            <section class="post next white-box shadow floatable blur">
+              &nbsp;Next&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+            </section>
+          </a>
+        
+      </div>
     
   
 
@@ -3178,7 +3195,7 @@ temperature（0~2）：温度，控制输出...
           <li><a class="flat-box"
             title="/categories/AI-Agent/" href="/categories/AI-Agent/"
             active-action="action-categoriesAI-Agent"
-            ><div class='name'>AI-Agent</div><div class='badge'>(7)</div></a></li>
+            ><div class='name'>AI-Agent</div><div class='badge'>(8)</div></a></li>
         
       </ul>
     </div>
@@ -3229,7 +3246,7 @@ temperature（0~2）：温度，控制输出...
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>18 篇</div>
+          <div>19 篇</div>
         </div>
       
 
@@ -3250,7 +3267,7 @@ temperature（0~2）：温度，控制输出...
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2026-10-07 日</div>
+          <div id="last-update-show">2026-10-08 日</div>
         </div>
       
     </div>
@@ -3275,7 +3292,7 @@ temperature（0~2）：温度，控制输出...
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2026/10/06/MCP/"><div class="item"><time>2026-10-07</time><span>AI-Agent</span></div><span>MCP</span></a></li><li><a class="widget-last" href="/2026/10/06/%E6%A3%80%E7%B4%A2/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>检索</span></a></li><li><a class="widget-last" href="/2026/10/06/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>上下文工程</span></a></li><li><a class="widget-last" href="/2026/10/05/Agent-Loop/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>Agent-Loop</span></a></li><li><a class="widget-last" href="/2026/10/05/Agent%E5%AD%A6%E4%B9%A0%E6%84%9F%E5%8F%97/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>Agent学习感受</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2026/10/07/MultiAgent/"><div class="item"><time>2026-10-08</time><span>AI-Agent</span></div><span>MultiAgent</span></a></li><li><a class="widget-last" href="/2024/05/21/%E5%BA%94%E7%94%A8%E5%B1%82/"><div class="item"><time>2026-10-07</time></div><span>应用层</span></a></li><li><a class="widget-last" href="/2024/05/18/hello-world/"><div class="item"><time>2026-10-07</time></div><span>Hello World</span></a></li><li><a class="widget-last" href="/2026/10/06/MCP/"><div class="item"><time>2026-10-07</time><span>AI-Agent</span></div><span>MCP</span></a></li><li><a class="widget-last" href="/2026/10/06/%E6%A3%80%E7%B4%A2/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>检索</span></a></li></ul>
   </div>
 </section>
 
