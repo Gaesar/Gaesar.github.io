@@ -1756,7 +1756,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1791299982434),
+    lastupdate: new Date(1791375560710),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2479,9 +2479,77 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           
         
+          
+        
       
     
     
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/06/MCP/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Gaesar">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Gaesar">
+    <meta itemprop="description" content="">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2026/10/06/MCP/"  itemprop="url">
+        MCP
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        MCPMCP解决的问题在使用Function Calling调用外部工具的时候，工具schema和工具的执行都需要手动写，当在另一个应用中调用相同的工具时，要重新写一遍工具schema和工具的执行，同一个工具发生变化时，所有的应用都要修改。
+这个时候AI应用和工具是N*M的关系，每个应用都要自己实现一遍工具。
+MCP是Anthropic制定的一套通信协议，方便AI应用对接外部工具。
+AI应用...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2026-10-06T23:21:48+08:00">2026-10-06</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/AI-Agent/">AI-Agent</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/AI-Agent/" itemprop="url"><span itemprop="name">AI-Agent</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2026/10/06/MCP/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
       
         
           <div class='post-wrapper'>
@@ -3053,64 +3121,6 @@ temperature（0~2）：温度，控制输出...
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/25/计算机网络-网络层/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/"  itemprop="url">
-        计算机网络-网络层
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        网络层网络层功能提供主机到主机的通信服务，将分组经过多个网路和多段链路传输到主机。
-网络层分为数据平面和控制平面，数据平面进行分组转发，控制平面进行路由选择
-TCP&#x2F;IP中的网络层向上提供简单灵活、无连接、尽最大努力交付的数据报服务。这样路由器就很简单，很便宜，但会遇到出错、丢失、重复、失序、超时的问题，通信的可靠性有传输层解决。优点：简单、灵活、价格低、适用性强。
-路由器：专用的...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-25T20:10:00+08:00">2024-05-25</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/05/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3202,7 +3212,7 @@ TCP&#x2F;IP中的网络层向上提供简单灵活、无连接、尽最大努力
           <li><a class="flat-box"
             title="/categories/AI-Agent/" href="/categories/AI-Agent/"
             active-action="action-categoriesAI-Agent"
-            ><div class='name'>AI-Agent</div><div class='badge'>(6)</div></a></li>
+            ><div class='name'>AI-Agent</div><div class='badge'>(7)</div></a></li>
         
       </ul>
     </div>
@@ -3253,7 +3263,7 @@ TCP&#x2F;IP中的网络层向上提供简单灵活、无连接、尽最大努力
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>17 篇</div>
+          <div>18 篇</div>
         </div>
       
 
@@ -3274,7 +3284,7 @@ TCP&#x2F;IP中的网络层向上提供简单灵活、无连接、尽最大努力
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2026-10-06 日</div>
+          <div id="last-update-show">2026-10-07 日</div>
         </div>
       
     </div>
@@ -3299,7 +3309,7 @@ TCP&#x2F;IP中的网络层向上提供简单灵活、无连接、尽最大努力
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2026/10/06/%E6%A3%80%E7%B4%A2/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>检索</span></a></li><li><a class="widget-last" href="/2026/10/06/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>上下文工程</span></a></li><li><a class="widget-last" href="/2026/10/05/Agent-Loop/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>Agent-Loop</span></a></li><li><a class="widget-last" href="/2026/10/05/Agent%E5%AD%A6%E4%B9%A0%E6%84%9F%E5%8F%97/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>Agent学习感受</span></a></li><li><a class="widget-last" href="/2024/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/"><div class="item"><time>2026-10-05</time></div><span>计算机网络-应用层</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2026/10/06/MCP/"><div class="item"><time>2026-10-07</time><span>AI-Agent</span></div><span>MCP</span></a></li><li><a class="widget-last" href="/2026/10/06/%E6%A3%80%E7%B4%A2/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>检索</span></a></li><li><a class="widget-last" href="/2026/10/06/%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>上下文工程</span></a></li><li><a class="widget-last" href="/2026/10/05/Agent-Loop/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>Agent-Loop</span></a></li><li><a class="widget-last" href="/2026/10/05/Agent%E5%AD%A6%E4%B9%A0%E6%84%9F%E5%8F%97/"><div class="item"><time>2026-10-06</time><span>AI-Agent</span></div><span>Agent学习感受</span></a></li></ul>
   </div>
 </section>
 
