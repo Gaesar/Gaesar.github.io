@@ -5,8 +5,8 @@
   <meta name="Volantis" content="5.8.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://Gaesar.github.io/page/2/"/>
+  
+  <link rel="canonical" href="https://Gaesar.github.io/2026/10/09/hexo-volantis-站内搜索不生效问题/"/>
   <!-- 渲染优化 -->
     <meta http-equiv='x-dns-prefetch-control' content='on' />
       <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -34,16 +34,21 @@
 
   <!-- feed -->
   <!-- 页面元数据 -->
-  <title>Gaesar</title>
-  <meta name="keywords" content="null">
+  <title>hexo + volantis 站内搜索不生效问题 - Gaesar</title>
+  <meta name="keywords" content="bug复盘,null">
   <meta desc name="description" content="Gaesar - Jacques Zhao - Gaesar">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Gaesar">
-<meta property="og:url" content="https://gaesar.github.io/page/2/index.html">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo + volantis 站内搜索不生效问题">
+<meta property="og:url" content="https://gaesar.github.io/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Gaesar">
+<meta property="og:description" content="hexo + volantis 站内搜索不生效问题反复尝试了_config.yml 和_config.volantis.yml的各种配置，结果一直不生效，甚至尝试了给volantis添加js源码，还是不生效。 最后把_config.yml 和_config.volantis.yml中的所有配置都删除了，结果生效了…… 复盘发现，最开始不生效，是因为没有安装 12+-- hexo-generator">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2026-10-08T16:06:59.000Z">
+<meta property="article:modified_time" content="2026-10-08T16:12:23.333Z">
 <meta property="article:author" content="Jacques Zhao">
+<meta property="article:tag" content="bug复盘">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
@@ -2405,7 +2410,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="half" class='cover-wrapper  search' style="display: ;">
+      <div id="half" class='cover-wrapper post search' style="display: ;">
         
   <div id="parallax-window"></div>
 
@@ -2469,15 +2474,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/05/解决github推送超时：Failed-to-connect-to-github-com-port-443-Timed-out/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/09/hexo-volantis-站内搜索不生效问题/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Gaesar">
   </span>
@@ -2486,613 +2484,211 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2026/10/05/%E8%A7%A3%E5%86%B3github%E6%8E%A8%E9%80%81%E8%B6%85%E6%97%B6%EF%BC%9AFailed-to-connect-to-github-com-port-443-Timed-out/"  itemprop="url">
-        解决github推送超时：Failed to connect to github.com port 443: Timed out.
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        解决办法：换成 SSH 协议1. 先在本地生成 ssh 密钥，添加到 Github1.打开 git bash，生成密钥（一路回车）。
-1ssh-keygen -t ed25519 -C &quot;你github绑定的邮箱&quot;
-
-2.打开 C:\Users\你的用户名\.ssh\id_ed25519.pub，复制全部公钥文本。
-3.Github 添加公钥，头像 → Settings ...
-      
     
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+      <h1 class="title" itemprop="name headline">
+        hexo + volantis 站内搜索不生效问题
+      </h1>
+      <div class='new-meta-box'>
         
-        <time itemprop="dateCreated datePublished" datetime="2026-10-05T00:19:30+08:00">2026-10-05</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2026/10/05/%E8%A7%A3%E5%86%B3github%E6%8E%A8%E9%80%81%E8%B6%85%E6%97%B6%EF%BC%9AFailed-to-connect-to-github-com-port-443-Timed-out/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/about/" rel="nofollow">
+    <img itemprop="image" src="https://gcore.jsdelivr.net/gh/Gaesar/Gaesar.github.io@main/pic/202405191504866.jpg" class="lazyload" data-srcset="https://gcore.jsdelivr.net/gh/Gaesar/Gaesar.github.io@main/pic/202405191504866.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Gaesar</p>
+  </a>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/04/大模型基础/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/"  itemprop="url">
-        大模型基础
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        大模型生成回答的工作原理大模型首先在互联网上的大量语料中进行学习，学习到了词与词之间的关联。
-然后拿着用户的信息，根据之前的学习，去推断概率最大的下一个词是什么，把这个概率最大的词取出拼接到用户的信息中，再根据这个拼接的信息继续推断概率最大的下一个词是什么，就这样不断循环，一个词一个词地生成，直到推断出结束符，回答完成。
-控制大模型选词的参数
-temperature（0~2）：温度，控制输出...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2026-10-04T22:01:36+08:00">2026-10-04</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/AI-Agent/">AI-Agent</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/AI-Agent/" itemprop="url"><span itemprop="name">AI-Agent</span></a>
-            </span>
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2026-10-09T00:06:59+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Oct 9, 2026</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+          
+            
+
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h1 id="hexo-volantis-站内搜索不生效问题"><a href="#hexo-volantis-站内搜索不生效问题" class="headerlink" title="hexo + volantis 站内搜索不生效问题"></a>hexo + volantis 站内搜索不生效问题</h1><p>反复尝试了_config.yml 和_config.volantis.yml的各种配置，结果一直不生效，甚至尝试了给volantis添加js源码，还是不生效。</p>
+<p>最后把_config.yml 和_config.volantis.yml中的所有配置都删除了，结果生效了……</p>
+<p>复盘发现，最开始不生效，是因为没有安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">+-- hexo-generator-json-content@4.2.3</span><br><span class="line">+-- hexo-generator-search@2.4.3</span><br></pre></td></tr></table></figure>
+
+<p>这两个插件安装好，不用做任何配置，走默认配置，站内搜索就生效了。</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
       
-        <div>
-          <a class='readmore' href='/2026/10/04/%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80/' itemprop="url">
-            Read More
-          </a>
-        </div>
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2026-10-09T00:12:23+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Oct 9, 2026</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/25/计算机网络-网络层/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
+          
   
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/"  itemprop="url">
-        计算机网络-网络层
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/bug%E5%A4%8D%E7%9B%98/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>bug复盘</p></a></div>
+  <span hidden itemprop="keywords">bug复盘</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        网络层网络层功能提供主机到主机的通信服务，将分组经过多个网路和多段链路传输到主机。
-网络层分为数据平面和控制平面，数据平面进行分组转发，控制平面进行路由选择
-TCP&#x2F;IP中的网络层向上提供简单灵活、无连接、尽最大努力交付的数据报服务。这样路由器就很简单，很便宜，但会遇到出错、丢失、重复、失序、超时的问题，通信的可靠性有传输层解决。优点：简单、灵活、价格低、适用性强。
-路由器：专用的...
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://gaesar.github.io/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/&title=hexo + volantis 站内搜索不生效问题 - Gaesar&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://gaesar.github.io/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/&title=hexo + volantis 站内搜索不生效问题 - Gaesar&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://gaesar.github.io/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/&title=hexo + volantis 站内搜索不生效问题 - Gaesar&summary="
+          
+          >
+          
+            <img src="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
       
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-25T20:10:00+08:00">2024-05-25</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/05/25/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E7%BD%91%E7%BB%9C%E5%B1%82/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
 </div>
 
-          </div>
+
+
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/22/计算机网络-运输层/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
+    </div>
+    <!-- Custom Files bottomMeta begin -->
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%BF%90%E8%BE%93%E5%B1%82/"  itemprop="url">
-        计算机网络-运输层
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        传输层功能：1主机上应用进程之间提供逻辑通信
-2 具有复用和分用的功能：复用：多个进程可以使用同一个传输协议。分用：去除首部后可以正确分发给进程
-3 具有差错检测的功能：TCP出错重发，UDP出错丢弃
-4 提供面向连接和无连接的传输协议
-端口：作用：标识主机中的应用进程，连接应用层的进程和传输层
-硬件端口：不同硬件设备之间进行交互的接口
-软件端口：应用层进程和传输实体之间交互的地址
-端口号：...
-      
-    
+    <!-- Custom Files bottomMeta end -->
   </div>
+
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-22T09:54:13+08:00">2024-05-22</time>
-        
-      </div>
+  
+
+  
+    <div class="prev-next">
       
-        <div>
-          <a class='readmore' href='/2024/05/22/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E8%BF%90%E8%BE%93%E5%B1%82/' itemprop="url">
-            Read More
-          </a>
-        </div>
+      
+        <a class='next' href='/2026/10/07/MultiAgent/'>
+          <p class='title'>MultiAgent<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>MultiAgent值得采用多Agent协作的情况
+需要立场隔离：自己审查自己天然带有辩护立场，立场隔离的手段是独立的 messages，不共享历史。
+需要权限隔离：角色 prompt 只影响行...</p>
+        </a>
       
     </div>
   
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/21/应用层/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
   
-  
-  
+
+
+  <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/21/%E5%BA%94%E7%94%A8%E5%B1%82/"  itemprop="url">
-        应用层
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        6、应用层6.1 网络应用模型6.1.1 C&#x2F;S模型1.客户&#x2F;服务器模型，涉及到两个主体：服务器和客户机。总是打开的主机是服务器，向服务器发起请求的主机是客户机。
-2.工作流程是：1.服务器等待接收客户机请求 2.客户机向服务器发起请求，等待接收服务器结果 3.服务器受到请求后，分析处理后将结果返回给客户机
-3.实质上是客户机程序向服务器程序发起请求，服务器程序可以同时处...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-21T11:38:48+08:00">2024-05-21</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/05/21/%E5%BA%94%E7%94%A8%E5%B1%82/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
+    <div id="layoutHelper-comments"></div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/21/计算机网络-应用层/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/"  itemprop="url">
-        计算机网络-应用层
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        6、应用层6.1 网络应用模型6.1.1 C&#x2F;S模型1.客户&#x2F;服务器模型，涉及到两个主体：服务器和客户机。总是打开的主机是服务器，向服务器发起请求的主机是客户机。
-2.工作流程是：1.服务器等待接收客户机请求 2.客户机向服务器发起请求，等待接收服务器结果 3.服务器受到请求后，分析处理后将结果返回给客户机
-3.实质上是客户机程序向服务器程序发起请求，服务器程序可以同时处...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-21T11:36:12+08:00">2024-05-21</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/05/21/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C-%E5%BA%94%E7%94%A8%E5%B1%82/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/19/运营人生/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/19/%E8%BF%90%E8%90%A5%E4%BA%BA%E7%94%9F/"  itemprop="url">
-        运营人生
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-         目标–&gt;思考–&gt;行动–&gt;评价反馈
-确立目标–&gt;思考方法–&gt;认真行动–&gt;反馈调整
-以往经验来看，可能是缺乏反馈这个步骤？
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-19T19:53:31+08:00">2024-05-19</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/05/19/%E8%BF%90%E8%90%A5%E4%BA%BA%E7%94%9F/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/18/git工作流/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/18/git%E5%B7%A5%E4%BD%9C%E6%B5%81/"  itemprop="url">
-        git工作流
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        git 工作流做修改1.git clone 把 remote中的项目克隆到本地
-
-2.修改代码的时候在本地建立一个新的feature branch，避免破坏主分支，并且有利于多人合作
-​	复制当前的branch到新的branch
-
-3.git diff查看做的修改
-
-4.git add添加修改的文件到暂存区，把想要commit的文件告知给git
-
-5.git commit把修改提交到本地gi...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-18T23:56:28+08:00">2024-05-18</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/05/18/git%E5%B7%A5%E4%BD%9C%E6%B5%81/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/18/测试/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/18/%E6%B5%8B%E8%AF%95/"  itemprop="url">
-        测试
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        使用github page搭建个人博客参考连接：
-【实操】基于 GitHub Pages + Hexo 搭建个人博客_github pages hexo-CSDN博客
-从零开始用Hexo-GithubPage搭建个人网站（保姆级）-CSDN博客
-12345npx hexo n &quot;文章名&quot;hexo d -ggit add .git commitgit push
+  </article>
 
 
 
 
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-18T23:32:32+08:00">2024-05-18</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/05/18/%E6%B5%8B%E8%AF%95/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2024/05/18/hello-world/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2024/05/18/hello-world/"  itemprop="url">
-        Hello World
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Qu...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2024-05-18T23:21:12+08:00">2024-05-18</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2024/05/18/hello-world/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/">
-            <section class="post prev white-box shadow floatable blur" >
-              <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          2 / 2
-        </p>
-        
-      </div>
-    
-  
 
 
 </div>
@@ -3103,178 +2699,56 @@ Qu...
     
     
       
-<section class="widget blogger desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box circle' href='/about/'>
-          <img no-lazy src='https://gcore.jsdelivr.net/gh/Gaesar/Gaesar.github.io@main/pic/202405191504866.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-          <h2>Gaesar</h2>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Gaesar</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="https://github.com/Gaesar"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget category desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/AI-Agent/" href="/categories/AI-Agent/"
-            active-action="action-categoriesAI-Agent"
-            ><div class='name'>AI-Agent</div><div class='badge'>(8)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-  
-  <section class="widget tagcloud desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/bug%E5%A4%8D%E7%9B%98/" style="font-size: 19px; color: #777">bug复盘</a> <a href="/tags/git/" style="font-size: 14px; color: #999">git</a> <a href="/tags/github-page/" style="font-size: 14px; color: #999">github page</a> <a href="/tags/%E4%BB%8E0%E5%AD%A6%E4%B9%A0Agent/" style="font-size: 24px; color: #555">从0学习Agent</a> <a href="/tags/%E5%BA%95%E5%B1%82%E6%96%B9%E6%B3%95%E8%AE%BA/" style="font-size: 14px; color: #999">底层方法论</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">测试</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 19px; color: #777">计算机网络</a>
-    </div>
-  </section>
-
-
-    
-  
-
-  
-    
-    
-      
-<section class="widget desktop pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>20 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-
-      
-
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2026-10-09 日</div>
-        </div>
-      
-    </div>
-  </div>
-</section>
-
-    
-  
-
-  
-    
-    
-      
-
-<section class="widget desktop mobile pjax">
-  
-  <header>
-    
-      <i class="fa-solid fa-clock WISTERIA fa-fw" aria-hidden="true"></i><span class='name'>最近更新</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/"><div class="item"><time>2026-10-09</time></div><span>hexo + volantis 站内搜索不生效问题</span></a></li><li><a class="widget-last" href="/2026/10/07/MultiAgent/"><div class="item"><time>2026-10-08</time><span>AI-Agent</span></div><span>MultiAgent</span></a></li><li><a class="widget-last" href="/2024/05/21/%E5%BA%94%E7%94%A8%E5%B1%82/"><div class="item"><time>2026-10-07</time></div><span>应用层</span></a></li><li><a class="widget-last" href="/2024/05/18/hello-world/"><div class="item"><time>2026-10-07</time></div><span>Hello World</span></a></li><li><a class="widget-last" href="/2026/10/06/MCP/"><div class="item"><time>2026-10-07</time><span>AI-Agent</span></div><span>MCP</span></a></li></ul>
-  </div>
-</section>
-
     
   
 
 
 <div class="widget-sticky pjax">
 
+  
+  
+
+
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        
+    </div>
+  </section>
+
+  
+
 </div>
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3309,7 +2783,7 @@ Qu...
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
+  pdata.ispage=true;
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3999,7 +3473,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://Gaesar.github.io/","name":"Gaesar"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Gaesar","url":"https://Gaesar.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","description":""},"publisher":{"@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://Gaesar.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage"},"author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/"},"publisher":{"@type":"Organization","name":"Gaesar","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"wordCount":0,"image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://Gaesar.github.io/","name":"Gaesar"}},{"@type":"ListItem","position":3,"item":{"@id":"https://Gaesar.github.io/2026/10/09/hexo-volantis-站内搜索不生效问题/","name":"hexo + volantis 站内搜索不生效问题"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"Gaesar","url":"https://Gaesar.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/","description":""},"publisher":{"@type":"Organization","name":"Gaesar","url":"https://Gaesar.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://Gaesar.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"hexo + volantis 站内搜索不生效问题","description":"","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https://gaesar.github.io/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/"},"author":{"@type":"Person","name":"Jacques Zhao","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://Gaesar.github.io/"},"publisher":{"@type":"Organization","name":"Gaesar","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://gaesar.github.io/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/","wordCount":0,"datePublished":"2026-10-08T16:06:59.000Z","dateModified":"2026-10-08T16:12:23.333Z","keywords":"bug复盘","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
