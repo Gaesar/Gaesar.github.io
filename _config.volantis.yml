@@ -23,9 +23,9 @@ navbar:
 #    - name: 友链
 #      icon: fa-solid fa-link
 #      url: friends/
-#    - name: 关于
-#      icon: fa-solid fa-info-circle
-#      url: about/
+    - name: 关于
+      icon: fa-solid fa-info-circle
+      url: about/
     - name: 明暗切换
       icon: fas fa-moon
       toggle: darkmode
@@ -211,6 +211,16 @@ comments:
     lang: zh-CN
     theme: preferred_color_scheme
 
+article:
+  body:
+    top_meta: [author, date, category, counter]
+    bottom_meta: [updated, tags, share]
+    meta_library:
+      author:
+        name: Gaesar
+        avatar: "https://cdn.jsdelivr.net/gh/Gaesar/Gaesar.github.io@main/pic/202405191504866.jpg"
+        url: /about/
+  
 plugins:
   parallax:
     enable: true
