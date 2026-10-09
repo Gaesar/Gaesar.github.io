@@ -1756,7 +1756,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1791532694582),
+    lastupdate: new Date(1791535526190),
     sidebar: {
       for_page: ["blogger","category","tagcloud","webinfo","lastupdate"],
       for_post: ["toc"],
@@ -2502,6 +2502,74 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
           <div class='post-wrapper'>
             <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
+  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/09/继续学习的路线/">
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Gaesar">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
+    <meta itemprop="name" content="Gaesar">
+    <meta itemprop="description" content="">
+  </span>
+  
+  
+  
+    <span hidden>
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+    </span>
+  
+  
+    
+    <h2 class="article-title"  itemprop="name headline">
+      <a href="/2026/10/09/%E7%BB%A7%E7%BB%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B7%AF%E7%BA%BF/"  itemprop="url">
+        继续学习的路线
+      </a>
+    </h2>
+  
+  <div class='md article-desc' itemprop="articleBody">
+    
+      
+        继续学习路线MiniAgent 没有考虑到的问题
+并发生产 Agent 面对的是同时涌进来的成百上千个会话
+
+等待要重叠，Agent 的大部分时间花在等 API 响应和等工具执行上。同步代码里这些等待是干等，生产系统用 async把等待重叠起来。
+会话状态外置，放进所有机器都能读写的地方（数据库、Redis），任何一台机器都能接手任何一个会话。
+故障隔离，一个用户的任务烧 20 轮，不能拖慢...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='solid'>
+      <div>
+        
+        <time itemprop="dateCreated datePublished" datetime="2026-10-09T16:06:43+08:00">2026-10-09</time>
+        
+          <span class="dot"></span>
+          <a class="category-link" href="/categories/AI-Agent/">AI-Agent</a>
+          
+            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+              <a href="/categories/AI-Agent/" itemprop="url"><span itemprop="name">AI-Agent</span></a>
+            </span>
+          
+        
+      </div>
+      
+        <div>
+          <a class='readmore' href='/2026/10/09/%E7%BB%A7%E7%BB%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B7%AF%E7%BA%BF/' itemprop="url">
+            Read More
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
   <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/09/Agent测评/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="Gaesar">
@@ -3088,63 +3156,6 @@ Function Calling的过程1模型读取messages -&gt; 模型返回tool_call -&gt;
           </div>
         
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow floatable blur"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://gaesar.github.io/2026/10/05/博客发布流程/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Gaesar">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="Gaesar">
-    <meta itemprop="description" content="">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2026/10/05/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/"  itemprop="url">
-        博客发布流程
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      
-        博客发布流程12345hexo new &quot;标题&quot;hexo d -ggit add .git commit -m &quot;add new blog&quot;git push
-
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2026-10-05T00:45:06+08:00">2026-10-05</time>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2026/10/05/%E5%8D%9A%E5%AE%A2%E5%8F%91%E5%B8%83%E6%B5%81%E7%A8%8B/' itemprop="url">
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
     
   </section>
   
@@ -3237,7 +3248,7 @@ Function Calling的过程1模型读取messages -&gt; 模型返回tool_call -&gt;
           <li><a class="flat-box"
             title="/categories/AI-Agent/" href="/categories/AI-Agent/"
             active-action="action-categoriesAI-Agent"
-            ><div class='name'>AI-Agent</div><div class='badge'>(9)</div></a></li>
+            ><div class='name'>AI-Agent</div><div class='badge'>(10)</div></a></li>
         
       </ul>
     </div>
@@ -3288,7 +3299,7 @@ Function Calling的过程1模型读取messages -&gt; 模型返回tool_call -&gt;
       
         <div class="webinfo-item">
           <div>文章数目：</div>
-          <div>21 篇</div>
+          <div>22 篇</div>
         </div>
       
 
@@ -3334,7 +3345,7 @@ Function Calling的过程1模型读取messages -&gt; 模型返回tool_call -&gt;
 
 
   <div class='content'>
-    <ul class="list entry navigation"><li><a class="widget-last" href="/2026/10/09/Agent%E6%B5%8B%E8%AF%84/"><div class="item"><time>2026-10-09</time><span>AI-Agent</span></div><span>Agent测评</span></a></li><li><a class="widget-last" href="/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/"><div class="item"><time>2026-10-09</time></div><span>hexo + volantis 站内搜索不生效问题</span></a></li><li><a class="widget-last" href="/2026/10/07/MultiAgent/"><div class="item"><time>2026-10-08</time><span>AI-Agent</span></div><span>MultiAgent</span></a></li><li><a class="widget-last" href="/2024/05/21/%E5%BA%94%E7%94%A8%E5%B1%82/"><div class="item"><time>2026-10-07</time></div><span>应用层</span></a></li><li><a class="widget-last" href="/2024/05/18/hello-world/"><div class="item"><time>2026-10-07</time></div><span>Hello World</span></a></li></ul>
+    <ul class="list entry navigation"><li><a class="widget-last" href="/2026/10/09/%E7%BB%A7%E7%BB%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B7%AF%E7%BA%BF/"><div class="item"><time>2026-10-09</time><span>AI-Agent</span></div><span>继续学习的路线</span></a></li><li><a class="widget-last" href="/2026/10/09/Agent%E6%B5%8B%E8%AF%84/"><div class="item"><time>2026-10-09</time><span>AI-Agent</span></div><span>Agent测评</span></a></li><li><a class="widget-last" href="/2026/10/09/hexo-volantis-%E7%AB%99%E5%86%85%E6%90%9C%E7%B4%A2%E4%B8%8D%E7%94%9F%E6%95%88%E9%97%AE%E9%A2%98/"><div class="item"><time>2026-10-09</time></div><span>hexo + volantis 站内搜索不生效问题</span></a></li><li><a class="widget-last" href="/2026/10/07/MultiAgent/"><div class="item"><time>2026-10-08</time><span>AI-Agent</span></div><span>MultiAgent</span></a></li><li><a class="widget-last" href="/2024/05/21/%E5%BA%94%E7%94%A8%E5%B1%82/"><div class="item"><time>2026-10-07</time></div><span>应用层</span></a></li></ul>
   </div>
 </section>
 

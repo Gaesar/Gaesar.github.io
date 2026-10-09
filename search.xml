@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>继续学习的路线</title>
+      <link href="/2026/10/09/%E7%BB%A7%E7%BB%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B7%AF%E7%BA%BF/"/>
+      <url>/2026/10/09/%E7%BB%A7%E7%BB%AD%E5%AD%A6%E4%B9%A0%E7%9A%84%E8%B7%AF%E7%BA%BF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="继续学习路线"><a href="#继续学习路线" class="headerlink" title="继续学习路线"></a>继续学习路线</h1><p>MiniAgent 没有考虑到的问题</p><h2 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h2><p>生产 Agent 面对的是同时涌进来的成百上千个会话</p><ul><li>等待要重叠，Agent 的大部分时间花在等 API 响应和等工具执行上。同步代码里这些等待是干等，生产系统用 async把等待重叠起来。</li><li>会话状态外置，放进所有机器都能读写的地方（数据库、Redis），任何一台机器都能接手任何一个会话。</li><li>故障隔离，一个用户的任务烧 20 轮，不能拖慢其他人。队列、限流、按用户配额，都是这个目的。</li></ul><h2 id="成本控制"><a href="#成本控制" class="headerlink" title="成本控制"></a>成本控制</h2><p>生产系统的控制手段分三层：</p><ul><li>设置硬预算，每任务、每用户、每天的 token 上限，超了熔断。</li><li>分级调用模型，路由简单请求给便宜模型、复杂任务给旗舰模型，是最有效的降本手段之一。</li><li>缓存，经可能命中缓存。</li></ul><h2 id="部署与安全"><a href="#部署与安全" class="headerlink" title="部署与安全"></a>部署与安全</h2><p>生产环境模型可能被用户诱导执行恶意命令，生产系统的标配</p><ul><li>沙箱，工具在隔离环境（容器、虚拟机）里执行，删库也只删掉一个用完即弃的沙箱。</li><li>权限白名单，执行层限制工具能碰哪些目录、能发哪些网络请求。</li><li>人工确认，高危操作（删除、部署、对外发送）交给人确认。</li></ul><h2 id="多模型适配"><a href="#多模型适配" class="headerlink" title="多模型适配"></a>多模型适配</h2><p>真实产品通常要同时接多家模型，而各家 API 存在差异。</p><p>会加一层模型适配层，对内定义一套自家的统一接口，对外为每个厂商写一个适配器把差异吸收掉。</p><h2 id="方向一：生产级框架"><a href="#方向一：生产级框架" class="headerlink" title="方向一：生产级框架"></a>方向一：生产级框架</h2><ul><li><strong>LangGraph</strong>：把多 Agent 流程建成显式状态图。</li><li><strong>模型官方 Agent SDK</strong>：主流模型厂商都提供了自己的 Agent 开发套件，通常内置循环、工具、会话管理。读它们的源码尤其有教益。</li><li><strong>开源编码 Agent</strong>：读一两个生产级编码 Agent 的源码，重点看它们的工具层比四件套厚在哪里：权限确认、diff 展示、多文件编辑的事务性。</li></ul><h2 id="方向二：测评与可靠性"><a href="#方向二：测评与可靠性" class="headerlink" title="方向二：测评与可靠性"></a>方向二：测评与可靠性</h2><ul><li><strong>公开基准</strong>：SWE-bench（真实 GitHub issue 修复）是编码 Agent 常用的公开基准。包括仓库环境复现、任务构造、允许修改的补丁边界、独立判分和整套运行基础设施。</li><li><strong>LLM-as-judge 的工程化</strong>：怎么校准裁判模型、怎么防止它偏爱某种文风。</li><li><strong>线上评测</strong>：真实产品还要在生产流量上做 A&#x2F;B 对比、采样人工复核。</li></ul><h2 id="方向三：Agent-RL-与前沿"><a href="#方向三：Agent-RL-与前沿" class="headerlink" title="方向三：Agent RL 与前沿"></a>方向三：Agent RL 与前沿</h2><ul><li><strong>Agent RL（强化学习训练 Agent）</strong>：评测环境就是训练环境，通过率就是奖励信号。这是当前模型厂商投入最重的方向之一，也解释了为什么新一代模型”天生”更会当 Agent。</li><li><strong>计算机使用（computer use）</strong>：工具从”你写的函数”扩展到”整个图形界面”，模型看截图、动鼠标键盘。</li><li><strong>长时程任务</strong>：让 Agent 可靠地跑几小时、几天的任务，核心难题：上下文管理和评测。</li></ul><h2 id="MiniAgent的意义"><a href="#MiniAgent的意义" class="headerlink" title="MiniAgent的意义"></a>MiniAgent的意义</h2><ul><li>框架每半年换一茬，循环和工具、上下文、评测是稳定层</li><li>每读到一个新概念（新的记忆方案、新的协作模式），先想”在 MiniAgent 上怎么用 50 行验证它”。能落到那十行循环上的知识才是你的，落不上去的，多半还没到需要你懂的时候。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> AI-Agent </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 从0学习Agent </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Agent测评</title>
       <link href="/2026/10/09/Agent%E6%B5%8B%E8%AF%84/"/>
       <url>/2026/10/09/Agent%E6%B5%8B%E8%AF%84/</url>
